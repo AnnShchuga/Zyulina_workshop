@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="640" viewBox="0 0 800 640">
+<rect width="800" height="640" fill="#F6C9A3"/>
+<circle cx="656" cy="141" r="90" fill="#FFFFFF" opacity=".25"/>
+<path d="M120 544 L304 320 L440 448 L560 358 L704 544Z" fill="#FFFFFF" opacity=".28"/>
+<text x="50%" y="46%" text-anchor="middle" font-family="PT Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#435A67">ЗАГЛУШКА</text>
+<text x="50%" y="56%" text-anchor="middle" font-family="PT Sans, Arial, sans-serif" font-size="20" fill="#435A67">Новогодний венок</text>
+</svg>

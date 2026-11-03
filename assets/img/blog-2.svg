@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+<rect width="800" height="600" fill="#4A4A4A"/>
+<circle cx="656" cy="132" r="84" fill="#FFFFFF" opacity=".25"/>
+<path d="M120 510 L304 300 L440 420 L560 336 L704 510Z" fill="#FFFFFF" opacity=".28"/>
+<text x="50%" y="46%" text-anchor="middle" font-family="PT Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#FFFFFF">ЗАГЛУШКА</text>
+<text x="50%" y="56%" text-anchor="middle" font-family="PT Sans, Arial, sans-serif" font-size="20" fill="#FFFFFF">Фото встречи со школьниками</text>
+</svg>

@@ -1,0 +1,46 @@
+<section class="zm zm-sec zm-gal" id="works">
+<style>
+.zm-gal__head{display:grid;grid-template-columns:1fr 1fr;gap:var(--zm-s4);align-items:end}
+.zm-gal__head p{max-width:46ch}
+.zm-gal__grid{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--zm-s3);margin-top:var(--zm-s6)}
+.zm-gal__item{position:relative;text-decoration:none;color:inherit}
+.zm-gal__item:nth-child(1){grid-column:2/span 4}
+.zm-gal__item:nth-child(2){grid-column:8/span 5;margin-top:120px}
+.zm-gal__item:nth-child(3){grid-column:1/span 5;margin-top:-40px}
+.zm-gal__item:nth-child(4){grid-column:7/span 5;margin-top:60px}
+.zm-gal__blob{border-radius:36% 18% 40% 22%/28% 36% 22% 40%;overflow:hidden;aspect-ratio:5/4}
+.zm-gal__blob img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.zm-gal__item:hover img{transform:scale(1.04)}
+.zm-gal__label{position:absolute;top:18px;right:-10px;background:var(--zm-ink);color:#fff;font-weight:700;font-size:15px;padding:8px 16px;border-radius:999px}
+.zm-gal__item:nth-child(odd) .zm-gal__label{right:auto;left:-10px}
+.zm-gal__cta{margin-top:var(--zm-s6);display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+@media (max-width:900px){
+  .zm-gal__head{grid-template-columns:1fr}
+  .zm-gal__grid{grid-template-columns:1fr 1fr}
+  .zm-gal__item:nth-child(n){grid-column:auto;margin-top:0}
+  .zm-gal__label{right:8px!important;left:auto!important;top:8px;font-size:13px}
+}
+@media (max-width:520px){.zm-gal__grid{grid-template-columns:1fr}}
+</style>
+<div class="zm-deco zm-dot" style="left:62%;top:40px"></div>
+<div class="zm-deco zm-wave" style="right:4%;top:280px"></div>
+<div class="zm-deco zm-star zm-star--l" style="left:46%;top:430px"></div>
+<div class="zm-wrap zm-z">
+  <div class="zm-gal__head">
+    <h2 class="zm-h2">Работы<br><span class="zm-red">на&nbsp;заказ</span></h2>
+    <div>
+      <p>Новогодний и&nbsp;свадебный декор, открытки, куклы. Часть работ можно купить готовыми, похожую можно заказать: по&nbsp;вашему цвету, размеру и&nbsp;поводу.</p>
+    </div>
+  </div>
+  <div class="zm-gal__grid">
+    <a class="zm-gal__item" href="/works#newyear"><div class="zm-gal__blob" style="background:var(--zm-peach)"><img class="zm-todo" src="https://annshchuga.github.io/zyulina-workshop/assets/img/work-newyear.svg" alt="Новогодний венок" loading="lazy"></div><span class="zm-gal__label">Новогодний декор</span></a>
+    <a class="zm-gal__item" href="/works#cards"><div class="zm-gal__blob" style="background:var(--zm-pink)"><img class="zm-todo" src="https://annshchuga.github.io/zyulina-workshop/assets/img/work-cards.svg" alt="Открытки ручной работы" loading="lazy"></div><span class="zm-gal__label">Открытки</span></a>
+    <a class="zm-gal__item" href="/works#wedding"><div class="zm-gal__blob" style="background:var(--zm-lilac)"><img class="zm-todo" src="https://annshchuga.github.io/zyulina-workshop/assets/img/work-wedding.svg" alt="Свадебные бокалы и бутылки с декором" loading="lazy"></div><span class="zm-gal__label">Свадебный декор</span></a>
+    <a class="zm-gal__item" href="/works#dolls"><div class="zm-gal__blob" style="background:var(--zm-teal)"><img class="zm-todo" src="https://annshchuga.github.io/zyulina-workshop/assets/img/work-dolls.svg" alt="Куклы в разных техниках" loading="lazy"></div><span class="zm-gal__label">Куклы в&nbsp;разных техниках</span></a>
+  </div>
+  <div class="zm-gal__cta">
+    <a class="zm-btn zm-btn--accent" href="/contacts?topic=order">Хочу такую же</a>
+    <a class="zm-btn zm-btn--ghost" href="/works">Все работы</a>
+  </div>
+</div>
+</section>

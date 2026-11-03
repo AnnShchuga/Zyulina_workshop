@@ -1,0 +1,24 @@
+<section class="zm zm-sec zm-ab" id="about">
+<style>
+.zm-ab__box{display:grid;grid-template-columns:300px 1fr;gap:var(--zm-s6);align-items:center}
+.zm-ab__photo{width:300px;height:300px;border-radius:50%;background:var(--zm-red);overflow:hidden;border:6px solid var(--zm-paper);box-shadow:0 16px 40px rgba(232,82,63,.25)}
+.zm-ab__photo img{width:100%;height:100%;object-fit:cover}
+.zm-ab__text{display:grid;gap:var(--zm-s2);max-width:62ch}
+.zm-ab__text p{font-size:18px;line-height:1.55}
+@media (max-width:800px){.zm-ab__box{grid-template-columns:1fr;justify-items:center;gap:var(--zm-s4)}.zm-ab__photo{width:220px;height:220px}}
+</style>
+<div class="zm-deco zm-star zm-star--l" style="left:2%;top:90px"></div>
+<div class="zm-deco zm-dot" style="left:-50px;top:170px"></div>
+<div class="zm-deco zm-star" style="right:10%;top:60px"></div>
+<div class="zm-wrap zm-z">
+  <div class="zm-ab__box">
+    <div class="zm-ab__photo"><img class="zm-todo" src="{{A}}/img/portrait.svg" alt="Людмила Зюлина" loading="lazy"></div>
+    <div class="zm-ab__text">
+      <h2 class="zm-h2" style="font-size:clamp(38px,5vw,64px)">Давайте<br><span class="zm-red">знакомиться!</span></h2>
+      <p>Меня зовут Людмила. Я&nbsp;хозяйка этой творческой мастерской: создаю мастер-классы для детей и&nbsp;взрослых, а&nbsp;ещё творю для души и&nbsp;на&nbsp;заказ.</p>
+      <p>По&nbsp;образованию я&nbsp;библиотекарь. Много лет работала в&nbsp;детских и&nbsp;юношеских библиотеках, больше 7&nbsp;лет веду мастер-классы, последние 5&nbsp;лет&nbsp;— ещё и&nbsp;онлайн. Отзывы детей, родителей и&nbsp;клиентов помогли мне набраться смелости, уйти с&nbsp;работы и&nbsp;открыть своё дело.</p>
+      <div><a class="zm-btn zm-btn--ghost zm-btn--s" href="{{L:about}}">Подробнее обо мне</a></div>
+    </div>
+  </div>
+</div>
+</section>

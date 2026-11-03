@@ -1,0 +1,37 @@
+<section class="zm zm-sec zm-hero">
+<style>
+.zm-hero{padding:16px 0 var(--zm-s7)}
+.zm-hero__top{display:grid;grid-template-columns:1fr 340px;gap:var(--zm-s4);align-items:end}
+.zm-hero__side{display:flex;flex-direction:column;gap:var(--zm-s3)}
+.zm-hero__side p{font-size:18px;line-height:1.5}
+.zm-hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:var(--zm-s4)}
+.zm-hero__photo{margin-top:var(--zm-s5);border-radius:32px;overflow:hidden;aspect-ratio:2/0.88;background:var(--zm-peach)}
+.zm-hero__photo img{width:100%;height:100%;object-fit:cover}
+.zm-hero__facts{display:flex;flex-wrap:wrap;gap:var(--zm-s4);margin-top:var(--zm-s4)}
+.zm-hero__facts b{display:block;font:700 44px/1 var(--zm-font-display);color:var(--zm-red)}
+.zm-hero__facts span{font-size:15px;color:var(--zm-muted)}
+@media (max-width:900px){.zm-hero__top{grid-template-columns:1fr}.zm-hero__photo{aspect-ratio:4/3}}
+</style>
+<div class="zm-deco zm-dot" style="right:7%;top:-10px"></div>
+<div class="zm-deco zm-star zm-star--s" style="right:6%;top:58px;background:var(--zm-ink)"></div>
+<div class="zm-wrap zm-z">
+  <div class="zm-hero__top">
+    <div>
+      <h1 class="zm-h1">Творческая мастерская<br><span class="zm-red">Людмилы Зюлиной</span></h1>
+      <div class="zm-hero__cta">
+        <a class="zm-btn zm-btn--accent" href="{{L:workshops}}">Выбрать мастер-класс</a>
+        <a class="zm-btn zm-btn--ghost" href="{{L:works}}">Заказать работу</a>
+      </div>
+    </div>
+    <div class="zm-hero__side">
+      <p>Мастер-классы по&nbsp;рукоделию для детей и&nbsp;взрослых: онлайн, вживую, в&nbsp;записи или по&nbsp;инструкции с&nbsp;картинками. Делаю декор и&nbsp;подарки на&nbsp;заказ.</p>
+    </div>
+  </div>
+  <div class="zm-hero__photo"><img src="{{A}}/img/hero.svg" alt="Кисти и краски в мастерской" class="zm-todo"></div>
+  <div class="zm-hero__facts">
+    <div><b>7+ лет</b><span>веду мастер-классы</span></div>
+    <div><b>5 лет</b><span>провожу занятия онлайн</span></div>
+    <div><b>4 формата</b><span>онлайн, офлайн, видео, инструкции</span></div>
+  </div>
+</div>
+</section>

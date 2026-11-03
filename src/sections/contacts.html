@@ -1,0 +1,31 @@
+<section class="zm zm-sec zm-ct" style="padding-top:0">
+<style>
+.zm-ct__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--zm-s3)}
+.zm-ct__card{background:var(--zm-paper);border-radius:var(--zm-radius);padding:var(--zm-s4);display:flex;flex-direction:column;gap:12px;text-decoration:none;color:var(--zm-text);border:2px solid transparent;transition:border-color .2s}
+.zm-ct__card:hover{border-color:var(--zm-ink)}
+.zm-ct__card b{font:700 30px/1 var(--zm-font-display);text-transform:uppercase;color:var(--zm-ink)}
+.zm-ct__card span{color:var(--zm-muted)}
+.zm-ct__form{margin-top:var(--zm-s5);border:2px dashed var(--zm-line);border-radius:var(--zm-radius);padding:var(--zm-s4);text-align:center;color:var(--zm-muted)}
+.zm-ct__topic{margin-top:var(--zm-s3);font-weight:700;color:var(--zm-ink)}
+@media (max-width:900px){.zm-ct__grid{grid-template-columns:1fr}}
+</style>
+<div class="zm-wrap zm-z">
+  <div class="zm-ct__grid">
+    <a class="zm-ct__card zm-todo" href="https://t.me/USERNAME"><b>Telegram</b><span>Быстрее всего отвечаю здесь</span><span>@USERNAME</span></a>
+    <a class="zm-ct__card zm-todo" href="https://wa.me/79000000000"><b>WhatsApp</b><span>Сообщение или звонок</span><span>+7 [номер]</span></a>
+    <a class="zm-ct__card zm-todo" href="https://vk.com/USERNAME"><b>ВКонтакте</b><span>Новые работы и&nbsp;анонсы</span><span>vk.com/USERNAME</span></a>
+  </div>
+  <p class="zm-ct__topic" hidden></p>
+  <!-- В Тильде сюда ставится СТАНДАРТНЫЙ блок формы (BF-серия), а не код: так заявки приходят на почту/в Telegram и в «Заявки» Тильды. -->
+  <div class="zm-ct__form">Здесь в&nbsp;Тильде будет форма заявки: имя, телефон, что интересует, удобный способ связи, галочка согласия на&nbsp;обработку данных.</div>
+</div>
+<script>
+(function(){
+  var s=document.currentScript.closest('section'),p=s.querySelector('.zm-ct__topic');
+  var q=new URLSearchParams(location.search),m={decoupage:'Декупаж деревянных ложек',cardmaking:'Кардмейкинг',dandelion:'Композиция «Одуванчик»',wreath:'Новогодний венок',origami:'Оригами: лягушка-попрыгушка'},
+      t={party:'Мастер-класс на праздник',org:'Программа для организации',order:'Работа на заказ'};
+  var v=m[q.get('mk')]||t[q.get('topic')];
+  if(v){p.textContent='Вы выбрали: '+v+'. Укажите это в сообщении, и я сразу пойму, о чём речь.';p.hidden=false;}
+})();
+</script>
+</section>

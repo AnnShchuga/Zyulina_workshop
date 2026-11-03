@@ -1,0 +1,54 @@
+<section class="zm zm-sec zm-bl" id="blog">
+<!-- В Тильде этот блок лучше заменить на «Потоки» (блог с карточками), чтобы Людмила добавляла посты сама. Код оставлен как эталон вида карточки. -->
+<style>
+.zm-bl__head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:var(--zm-s5)}
+.zm-bl__note{font-size:16px;color:var(--zm-muted);max-width:28ch}
+.zm-bl .zm-rail{grid-auto-columns:minmax(300px,380px)}
+.zm-bl__post{background:#232323;color:#F1F1F1;border-radius:20px;overflow:hidden;display:flex;flex-direction:column}
+.zm-bl__top{display:flex;align-items:center;gap:10px;padding:12px 16px;font-size:15px}
+.zm-bl__ava{width:32px;height:32px;border-radius:50%;background:var(--zm-red);flex:none}
+.zm-bl__pic{position:relative;aspect-ratio:4/3;background:#3a3a3a}
+.zm-bl__pic img{width:100%;height:100%;object-fit:cover}
+.zm-bl__count{position:absolute;top:12px;right:12px;background:rgba(0,0,0,.6);border-radius:999px;padding:4px 10px;font-size:13px}
+.zm-bl__txt{margin:16px 16px 12px;padding:0;font-size:15px;line-height:1.5;display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;overflow:hidden}
+.zm-bl__more{padding:0 16px 16px;color:#FFB4A9;font-weight:700;text-decoration:none;font-size:15px}
+</style>
+<div class="zm-deco zm-star zm-star--l" style="left:38%;top:30px"></div>
+<div class="zm-wrap zm-z">
+  <div class="zm-bl__head">
+    <h2 class="zm-h2">Блог</h2>
+    <p class="zm-bl__note">Одним глазком тут можно подглядеть за&nbsp;волшебством</p>
+    <div class="zm-arrows">
+      <button class="zm-arrow" type="button" data-dir="-1" aria-label="Назад">←</button>
+      <button class="zm-arrow zm-arrow--fill" type="button" data-dir="1" aria-label="Вперёд">→</button>
+    </div>
+  </div>
+  <div class="zm-rail">
+    <article class="zm-bl__post">
+      <div class="zm-bl__top"><span class="zm-bl__ava"></span>Людмила Зюлина</div>
+      <div class="zm-bl__pic"><img class="zm-todo" src="{{A}}/img/blog-1.svg" alt="Урок памяти в библиотеке" loading="lazy"><span class="zm-bl__count">1/4</span></div>
+      <p class="zm-bl__txt">9&nbsp;октября в&nbsp;библиотеке на&nbsp;Плеханова прошёл урок памяти, посвящённый подвигу подольских курсантов. Школьникам рассказали о&nbsp;молодых ребятах немногим старше них, ценой своих жизней задержавших врага на&nbsp;подступах к&nbsp;Москве. После того как войска Красной армии попали в&nbsp;Вяземский котёл, на&nbsp;передовую были брошены курсанты военных училищ.</p>
+      <a class="zm-bl__more" href="{{L:blog}}#post-1">Читать полностью</a>
+    </article>
+    <article class="zm-bl__post">
+      <div class="zm-bl__top"><span class="zm-bl__ava"></span>Людмила Зюлина</div>
+      <div class="zm-bl__pic"><img class="zm-todo" src="{{A}}/img/blog-2.svg" alt="Встреча со школьниками ко Дню защитника Отечества" loading="lazy"><span class="zm-bl__count">1/9</span></div>
+      <p class="zm-bl__txt">Сегодня в&nbsp;нашей библиотеке прошла встреча со&nbsp;школьниками, посвящённая Дню защитника Отечества. Ребятам рассказали историю праздника и&nbsp;предложили почувствовать себя новобранцами: они отвечали на&nbsp;вопросы викторины о&nbsp;военной форме, учились наматывать портянки, складывали пилотки из&nbsp;газеты и&nbsp;пришивали пуговицы.</p>
+      <a class="zm-bl__more" href="{{L:blog}}#post-2">Читать полностью</a>
+    </article>
+    <article class="zm-bl__post">
+      <div class="zm-bl__top"><span class="zm-bl__ava"></span>Людмила Зюлина</div>
+      <div class="zm-bl__pic"><img class="zm-todo" src="{{A}}/img/blog-3.svg" alt="Программа «Всеволод Гаршин и его сказки»" loading="lazy"><span class="zm-bl__count">2/8</span></div>
+      <p class="zm-bl__txt">14&nbsp;февраля исполнилось 170&nbsp;лет В.&nbsp;М.&nbsp;Гаршину. Мы подготовили литературно-игровую программу «Всеволод Гаршин и&nbsp;его сказки». Ребята вспомнили героев писателя, отправились в&nbsp;путешествие по&nbsp;дорогам сказок, ответили на&nbsp;вопросы викторины, а&nbsp;в&nbsp;завершение сложили из&nbsp;бумаги лягушку-попрыгушку.</p>
+      <a class="zm-bl__more" href="{{L:blog}}#post-3">Читать полностью</a>
+    </article>
+  </div>
+</div>
+<script>
+(function(){
+  var s=document.currentScript.closest('section'),r=s.querySelector('.zm-rail');
+  s.querySelectorAll('[data-dir]').forEach(function(b){b.addEventListener('click',function(){
+    var c=r.firstElementChild;r.scrollBy({left:(+b.dataset.dir)*((c?c.offsetWidth:300)+24),behavior:'smooth'});});});
+})();
+</script>
+</section>

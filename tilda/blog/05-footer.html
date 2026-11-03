@@ -1,0 +1,51 @@
+<footer class="zm zm-ft">
+<style>
+.zm-ft{padding:var(--zm-s6) 0 var(--zm-s4);position:relative;overflow:hidden}
+.zm-ft__grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:var(--zm-s5)}
+.zm-ft__logo{width:150px;height:150px}
+.zm-ft__name{font:700 36px/1 var(--zm-font-display);text-transform:uppercase;color:var(--zm-red);margin-top:var(--zm-s3)}
+.zm-ft h3{font:700 18px/1.2 var(--zm-font-text);color:var(--zm-ink);margin-bottom:var(--zm-s3)}
+.zm-ft__menu{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.zm-ft__menu a{text-decoration:none;color:var(--zm-ink)}
+.zm-ft__menu a:hover{color:var(--zm-red)}
+.zm-ft__soc{display:flex;gap:12px}
+.zm-ft__soc a{width:44px;height:44px;border-radius:50%;background:var(--zm-ink);color:#fff;display:grid;place-items:center;text-decoration:none;font:700 13px/1 var(--zm-font-text)}
+.zm-ft__soc a:hover{background:var(--zm-red)}
+.zm-ft__copy{margin-top:var(--zm-s5);padding-top:var(--zm-s3);border-top:1px solid var(--zm-line);font-size:14px;color:var(--zm-muted);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media (max-width:800px){.zm-ft__grid{grid-template-columns:1fr}}
+</style>
+<div class="zm-deco zm-wave" style="right:-30px;bottom:-40px"></div>
+<div class="zm-deco zm-dot" style="left:30%;top:-30px;width:110px;height:110px"></div>
+<div class="zm-wrap zm-z">
+  <div class="zm-ft__grid">
+    <div>
+      <img class="zm-ft__logo" src="https://annshchuga.github.io/zyulina-workshop/assets/decor/logo.svg" width="150" height="150" alt="">
+      <p class="zm-ft__name">Людмила Зюлина</p>
+      <p style="margin-top:12px;color:var(--zm-muted)">Автор мастер-классов для детей и&nbsp;взрослых.<br>Творю на&nbsp;заказ.</p>
+    </div>
+    <nav aria-label="Меню в подвале">
+      <h3>Меню</h3>
+      <ul class="zm-ft__menu">
+        <li><a href="/workshops">Мастер-классы</a></li>
+        <li><a href="/works">Работы на&nbsp;заказ</a></li>
+        <li><a href="/about">Обо мне</a></li>
+        <li><a href="/blog">Блог</a></li>
+        <li><a href="/contacts">Контакты</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h3>Контакты</h3>
+      <div class="zm-ft__soc">
+        <a class="zm-todo" href="https://vk.com/USERNAME" aria-label="ВКонтакте">VK</a>
+        <a class="zm-todo" href="https://wa.me/79000000000" aria-label="WhatsApp">WA</a>
+        <a class="zm-todo" href="https://t.me/USERNAME" aria-label="Telegram">TG</a>
+      </div>
+      <p class="zm-todo" style="margin-top:var(--zm-s3)">+7 [телефон]<br>[e-mail]</p>
+    </div>
+  </div>
+  <div class="zm-ft__copy">
+    <span>© Творческая мастерская Людмилы Зюлиной</span>
+    <a class="zm-todo" href="/privacy">Политика обработки персональных данных</a>
+  </div>
+</div>
+</footer>

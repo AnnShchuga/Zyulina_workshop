@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Творческая мастерская Людмилы Зюлиной">
+<defs><path id="c" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/></defs>
+<text font-family="Yanone Kaffeesatz, Arial Narrow, sans-serif" font-weight="700" font-size="24" fill="#435A67">
+<textPath href="#c" startOffset="0" textLength="430" lengthAdjust="spacingAndGlyphs">ТВОРЧЕСКАЯ МАСТЕРСКАЯ ЛЮДМИЛЫ ЗЮЛИНОЙ</textPath></text>
+<path d="M150 46 l6 16 17 1 -13 10 5 17 -15 -9 -14 9 4 -17 -13 -10 17 -1z" fill="#E8523F"/>
+<circle cx="100" cy="100" r="34" fill="none" stroke="#1E1E1E" stroke-width="1.6"/>
+<circle cx="124" cy="112" r="24" fill="none" stroke="#1E1E1E" stroke-width="1.6"/>
+</svg>

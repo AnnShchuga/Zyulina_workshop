@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Работы на заказ — Творческая мастерская Людмилы Зюлиной</title>
+<meta name="description" content="Новогодний и свадебный декор, открытки, куклы ручной работы. Готовые работы и изготовление на заказ.">
+<link rel="icon" href="assets/decor/logo.svg" type="image/svg+xml">
+</head>
+<body data-zm-page="works" style="margin:0">
+<div class="zm zm-page">
+<!-- 00-base: токены, шрифты, общие классы. В Тильде — ПЕРВЫЙ блок T123 на каждой странице. -->
+<style>
+/* Шрифты лежат в проекте (OFL 1.1), без запросов к Google */
+@font-face{font-family:'Yanone Kaffeesatz';font-style:normal;font-weight:500;font-display:swap;src:url('assets/fonts/yanone-kaffeesatz-cyrillic-500-normal.woff2') format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Yanone Kaffeesatz';font-style:normal;font-weight:500;font-display:swap;src:url('assets/fonts/yanone-kaffeesatz-latin-500-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Yanone Kaffeesatz';font-style:normal;font-weight:700;font-display:swap;src:url('assets/fonts/yanone-kaffeesatz-cyrillic-700-normal.woff2') format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Yanone Kaffeesatz';font-style:normal;font-weight:700;font-display:swap;src:url('assets/fonts/yanone-kaffeesatz-latin-700-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'PT Sans';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/pt-sans-cyrillic-400-normal.woff2') format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'PT Sans';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/pt-sans-latin-400-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'PT Sans';font-style:normal;font-weight:700;font-display:swap;src:url('assets/fonts/pt-sans-cyrillic-700-normal.woff2') format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'PT Sans';font-style:normal;font-weight:700;font-display:swap;src:url('assets/fonts/pt-sans-latin-700-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+</style>
+<style>
+.zm{
+  /* Цвета сняты пипеткой с концепта */
+  --zm-bg:#F8F5F0;        /* тёплый молочный фон */
+  --zm-paper:#FFFDF9;     /* карточки */
+  --zm-ink:#435A67;       /* сланцевый: заголовки, кнопки */
+  --zm-ink-dark:#34474F;  /* hover для сланцевого */
+  --zm-red:#E8523F;       /* коралловый акцент */
+  --zm-red-dark:#C9402F;
+  --zm-text:#2B2B2B;      /* основной текст, не чистый чёрный */
+  --zm-muted:#5F6B70;     /* второстепенный текст, контраст ≥4.5:1 на фоне */
+  --zm-line:#E4DED4;
+  --zm-peach:#F6C9A3; --zm-pink:#F2A7A2; --zm-lilac:#C9B6E8; --zm-teal:#3AA0B8;
+  /* Шрифты. Заголовочный — временная замена, пока нет названия шрифта из Figma */
+  --zm-font-display:'Yanone Kaffeesatz','Arial Narrow',sans-serif;
+  --zm-font-text:'PT Sans',Arial,sans-serif;
+  /* Шкала отступов, база 8 px */
+  --zm-s1:8px;--zm-s2:16px;--zm-s3:24px;--zm-s4:32px;--zm-s5:48px;--zm-s6:64px;--zm-s7:96px;
+  --zm-radius:24px; --zm-radius-s:12px;
+  --zm-max:1200px;
+  --zm-assets:'assets';
+  font-family:var(--zm-font-text);color:var(--zm-text);
+  font-size:17px;line-height:1.45;
+  -webkit-font-smoothing:antialiased;
+}
+.zm,.zm *{box-sizing:border-box}
+.zm img{max-width:100%;display:block}
+.zm a{color:inherit}
+.zm h1,.zm h2,.zm h3,.zm p{margin:0}
+.zm-page{background:var(--zm-bg) url('assets/decor/seigaiha-bg.svg') repeat;background-size:120px 60px}
+.zm-wrap{max-width:var(--zm-max);margin:0 auto;padding:0 var(--zm-s3);position:relative}
+.zm-sec{position:relative;padding:var(--zm-s7) 0;overflow:hidden}
+
+/* Заголовки: две строки, сланцевая + коралловая, как в концепте */
+.zm-h1,.zm-h2{font-family:var(--zm-font-display);font-weight:700;text-transform:uppercase;line-height:.92;letter-spacing:.01em}
+.zm-h1,.zm-h2,.zm-h3{overflow-wrap:break-word}
+.zm-h1{font-size:clamp(48px,8.4vw,116px);color:var(--zm-ink)}
+.zm-h2{font-size:clamp(40px,6vw,84px);color:var(--zm-ink)}
+.zm-h3{font-family:var(--zm-font-display);font-weight:700;text-transform:uppercase;font-size:30px;line-height:1;color:var(--zm-ink)}
+.zm-red{color:var(--zm-red)}
+.zm-lead{font-size:19px;line-height:1.5;max-width:56ch}
+.zm-muted{color:var(--zm-muted)}
+
+/* Кнопки */
+.zm-btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:12px 26px;border-radius:999px;
+  font:700 16px/1 var(--zm-font-text);text-decoration:none;cursor:pointer;border:2px solid var(--zm-ink);
+  background:var(--zm-ink);color:#fff;transition:background .2s,color .2s,transform .2s}
+.zm-btn:hover{background:var(--zm-ink-dark);border-color:var(--zm-ink-dark)}
+.zm-btn:active{transform:translateY(1px)}
+.zm-btn:focus-visible{outline:3px solid var(--zm-red);outline-offset:3px}
+.zm-btn--accent{background:var(--zm-red);border-color:var(--zm-red)}
+.zm-btn--accent:hover{background:var(--zm-red-dark);border-color:var(--zm-red-dark)}
+.zm-btn--ghost{background:transparent;color:var(--zm-ink)}
+.zm-btn--ghost:hover{background:var(--zm-ink);color:#fff}
+.zm-btn--s{min-height:40px;padding:8px 18px;font-size:15px}
+
+/* Метки форматов: цвет продублирован словом — не полагаемся только на цвет */
+.zm-tag{display:inline-block;padding:5px 12px;border-radius:999px;font:700 13px/1.2 var(--zm-font-text);background:var(--zm-ink);color:#fff}
+.zm-tag--online{background:#2E7F93}
+.zm-tag--offline{background:var(--zm-red-dark)}
+.zm-tag--rec{background:#6A55A0}
+.zm-tag--pdf{background:#7A5A1E}
+
+/* Декор: звёзды, круги, «волны» */
+.zm-deco{position:absolute;pointer-events:none;z-index:0}
+.zm-star{width:48px;height:48px;background:var(--zm-ink);clip-path:polygon(50% 0,61% 39%,100% 50%,61% 61%,50% 100%,39% 61%,0 50%,39% 39%)}
+.zm-star--s{width:22px;height:22px}
+.zm-star--l{width:84px;height:84px}
+.zm-dot{width:150px;height:150px;border-radius:50%;background:var(--zm-red)}
+.zm-wave{width:200px;height:200px;border-radius:50%;background:url('assets/decor/seigaiha-dark.svg') center/56px 28px}
+.zm-z{position:relative;z-index:1}
+
+/* Горизонтальная лента карточек со стрелками */
+.zm-rail{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(280px,1fr);gap:var(--zm-s3);overflow-x:auto;scroll-snap-type:x mandatory;padding:8px 4px 16px;scrollbar-width:thin}
+.zm-rail>*{scroll-snap-align:start}
+.zm-arrows{display:flex;gap:12px}
+.zm-arrow{width:48px;height:48px;border-radius:50%;border:2px solid var(--zm-ink);background:transparent;color:var(--zm-ink);font-size:20px;cursor:pointer}
+.zm-arrow--fill{background:var(--zm-ink);color:#fff}
+.zm-arrow:focus-visible{outline:3px solid var(--zm-red);outline-offset:3px}
+
+/* Пометка «заменить»: видна только на превью GitHub, чтобы не забыть */
+.zm-todo{outline:2px dashed var(--zm-red);outline-offset:4px}
+
+@media (max-width:768px){
+  .zm{font-size:16px}
+  .zm-sec{padding:var(--zm-s6) 0}
+  .zm-wrap{padding:0 var(--zm-s2)}
+  .zm-dot{width:90px;height:90px}
+  .zm-wave{width:120px;height:120px}
+  .zm-star--l{display:none}
+}
+@media (prefers-reduced-motion:reduce){.zm *{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+<header class="zm zm-hd" id="top">
+<style>
+.zm-hd{position:relative;z-index:20;padding:20px 0}
+.zm-hd .zm-wrap{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.zm-hd__logo{display:block;width:104px;height:104px;flex:none}
+.zm-hd__nav{display:flex;align-items:center;gap:36px}
+.zm-hd__nav a{text-decoration:none;font-weight:700;font-size:16px;color:var(--zm-ink);padding:8px 0;border-bottom:2px solid transparent}
+.zm-hd__nav a:hover,.zm-hd__nav a[aria-current]{border-color:var(--zm-red)}
+.zm-hd__nav .zm-btn{color:#fff;border-bottom-width:2px;padding:10px 22px}
+.zm-hd__nav .zm-btn:hover{border-color:var(--zm-ink-dark)}
+.zm-hd__burger{display:none;width:48px;height:48px;border-radius:50%;border:2px solid var(--zm-ink);background:var(--zm-paper);cursor:pointer;position:relative}
+.zm-hd__burger span,.zm-hd__burger span::before,.zm-hd__burger span::after{position:absolute;left:12px;width:20px;height:2px;background:var(--zm-ink);content:'';transition:transform .2s}
+.zm-hd__burger span{top:22px}.zm-hd__burger span::before{left:0;top:-6px}.zm-hd__burger span::after{left:0;top:6px}
+@media (max-width:900px){
+  .zm-hd__logo{width:76px;height:76px}
+  .zm-hd__burger{display:block}
+  .zm-hd__nav{position:absolute;top:100%;left:16px;right:16px;flex-direction:column;align-items:stretch;gap:0;
+    background:var(--zm-paper);border-radius:var(--zm-radius);box-shadow:0 18px 40px rgba(52,71,79,.18);padding:12px 20px 20px;display:none}
+  .zm-hd.is-open .zm-hd__nav{display:flex}
+  .zm-hd__nav a{padding:14px 0;border-bottom:1px solid var(--zm-line)}
+  .zm-hd__nav .zm-btn{margin-top:16px;justify-content:center;border-bottom:2px solid var(--zm-ink)}
+}
+</style>
+<div class="zm-wrap">
+  <a class="zm-hd__logo" href="index.html" aria-label="На главную">
+    <img src="assets/decor/logo.svg" width="104" height="104" alt="Творческая мастерская Людмилы Зюлиной">
+  </a>
+  <button class="zm-hd__burger" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  <nav class="zm-hd__nav" aria-label="Основное меню">
+    <a href="workshops.html" data-page="workshops">Мастер-классы</a>
+    <a href="works.html" data-page="works">Работы на заказ</a>
+    <a href="about.html" data-page="about">Обо мне</a>
+    <a href="blog.html" data-page="blog">Блог</a>
+    <a class="zm-btn" href="contacts.html" data-page="contacts">Записаться</a>
+  </nav>
+</div>
+<script>
+(function(){
+  var hd=document.currentScript.closest('.zm-hd');
+  var b=hd.querySelector('.zm-hd__burger');
+  b.addEventListener('click',function(){
+    var o=hd.classList.toggle('is-open');
+    b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Закрыть меню':'Открыть меню');
+  });
+  var cur=document.body.getAttribute('data-zm-page')||(location.pathname.split('/').pop().replace('.html','')||'index');
+  if(cur){var a=hd.querySelector('[data-page="'+cur+'"]');if(a)a.setAttribute('aria-current','page');}
+})();
+</script>
+</header>
+<section class="zm zm-sec zm-ph">
+<style>
+.zm-ph{padding:var(--zm-s4) 0 var(--zm-s5)}
+.zm-ph__crumbs{font-size:14px;color:var(--zm-muted);margin-bottom:var(--zm-s3)}
+.zm-ph__crumbs a{color:var(--zm-ink)}
+.zm-ph .zm-lead{margin-top:var(--zm-s3)}
+</style>
+<div class="zm-deco zm-dot" style="right:8%;top:0"></div>
+<div class="zm-deco zm-star" style="right:24%;top:70px"></div>
+<div class="zm-wrap zm-z">
+  <p class="zm-ph__crumbs"><a href="index.html">Главная</a> / Работы на заказ</p>
+  <h1 class="zm-h1" style="font-size:clamp(48px,7vw,96px)">Работы<br><span class="zm-red">на заказ</span></h1>
+  <p class="zm-lead">Часть работ есть в наличии, похожие делаю на заказ: под ваш повод, цвет и размер.</p>
+</div>
+</section>
+<section class="zm zm-sec zm-wg" style="padding-top:0">
+<style>
+.zm-wg__cat{margin-top:var(--zm-s6);scroll-margin-top:24px}
+.zm-wg__cat:first-child{margin-top:0}
+.zm-wg__cat h2{font:700 40px/1 var(--zm-font-display);text-transform:uppercase;color:var(--zm-ink);display:flex;align-items:center;gap:16px}
+.zm-wg__cat h2::before{content:'';width:18px;height:18px;border-radius:50%;background:var(--zm-red)}
+.zm-wg__row{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--zm-s2);margin-top:var(--zm-s3)}
+.zm-wg__item{background:var(--zm-paper);border-radius:var(--zm-radius-s);overflow:hidden}
+.zm-wg__item img{aspect-ratio:1;object-fit:cover;width:100%}
+.zm-wg__item div{padding:12px 14px;font-size:15px;display:flex;justify-content:space-between;gap:8px}
+.zm-wg__item b{color:var(--zm-ink)}
+@media (max-width:900px){.zm-wg__row{grid-template-columns:repeat(2,1fr)}}
+</style>
+<div class="zm-wrap zm-z">
+  <div class="zm-wg__cat" id="newyear"><h2>Новогодний декор</h2>
+    <div class="zm-wg__row">
+      <figure class="zm-wg__item" style="margin:0"><img class="zm-todo" src="assets/img/work-newyear.svg" alt="Новогодний венок" loading="lazy"><div><span>Венок</span><b class="zm-todo">[в наличии / на заказ]</b></div></figure>
+      <figure class="zm-wg__item" style="margin:0"><img class="zm-todo" src="assets/img/work-newyear.svg" alt="Новогодний декор" loading="lazy"><div><span>[Название]</span><b class="zm-todo">[цена]</b></div></figure>
+      <figure class="zm-wg__item" style="margin:0"><img class="zm-todo" src="assets/img/work-newyear.svg" alt="Новогодний декор" loading="lazy"><div><span>[Название]</span><b class="zm-todo">[цена]</b></div></figure>
+      <figure class="zm-wg__item" style="margin:0"><img class="zm-todo" src="assets/img/work-newyear.svg" alt="Новогодний декор" loading="lazy"><div><span>[Название]</span><b class="zm-todo">[цена]</b></div></figure>
+    </div></div>
+  <div class="zm-wg__cat" id="cards"><h2>Открытки</h2>
+    <div class="zm-wg__row">
+      <figure class="zm-wg__item" style="margin:0"><img class="zm-todo" src="assets/img/work-cards.svg" alt="Открытка ручной работы" loading="lazy"><div><span>[Название]</span><b class="zm-todo">[цена]</b></div></figure>
+      <figure class="zm-wg__item" style="margin:0"><img class="zm-todo" src="assets/img/work-cards.svg" alt="Открытка ручной работы" loading="lazy"><div><span>[Название]</span><b class="zm-todo">[цена]</b></div></figure>
+      <figure class="zm-wg__item" style="margin:0"><img class="zm-todo" src="assets/img/work-cards.svg" alt="Открытка ручной работы" loading="lazy"><div><span>[Название]</span><b class="zm-todo">[цена]</b></div></figure>
+      <figure class="zm-wg__item" style="margin:0"><img class="zm-todo" src="assets/img/work-cards.svg" alt="Открытка ручной работы" loading="lazy"><div><span>[Название]</span><b class="zm-todo">[цена]</b></div></figure>
+    </div></div>
+  <div class="zm-wg__cat" id="wedding"><h2>Свадебный декор</h2>
+    <div class="zm-wg__row">
+      <figure class="zm-wg__item" style="margin:0"><img class="zm-todo" src="assets/img/work-wedding.svg" alt="Свадебные бокалы" loading="lazy"><div><span>Бокалы</span><b class="zm-todo">[на заказ]</b></div></figure>
+      <figure class="zm-wg__item" style="margin:0"><img class="zm-todo" src="assets/img/work-wedding.svg" alt="Декор бутылок" loading="lazy"><div><span>Бутылки</span><b class="zm-todo">[на заказ]</b></div></figure>
+      <figure class="zm-wg__item" style="margin:0"><img class="zm-todo" src="assets/img/work-wedding.svg" alt="Свадебный декор" loading="lazy"><div><span>[Название]</span><b class="zm-todo">[цена]</b></div></figure>
+      <figure class="zm-wg__item" style="margin:0"><img class="zm-todo" src="assets/img/work-wedding.svg" alt="Свадебный декор" loading="lazy"><div><span>[Название]</span><b class="zm-todo">[цена]</b></div></figure>
+    </div></div>
+  <div class="zm-wg__cat" id="dolls"><h2>Куклы в&nbsp;разных техниках</h2>
+    <div class="zm-wg__row">
+      <figure class="zm-wg__item" style="margin:0"><img class="zm-todo" src="assets/img/work-dolls.svg" alt="Кукла ручной работы" loading="lazy"><div><span>[Название]</span><b class="zm-todo">[цена]</b></div></figure>
+      <figure class="zm-wg__item" style="margin:0"><img class="zm-todo" src="assets/img/work-dolls.svg" alt="Кукла ручной работы" loading="lazy"><div><span>[Название]</span><b class="zm-todo">[цена]</b></div></figure>
+      <figure class="zm-wg__item" style="margin:0"><img class="zm-todo" src="assets/img/work-dolls.svg" alt="Кукла ручной работы" loading="lazy"><div><span>[Название]</span><b class="zm-todo">[цена]</b></div></figure>
+      <figure class="zm-wg__item" style="margin:0"><img class="zm-todo" src="assets/img/work-dolls.svg" alt="Кукла ручной работы" loading="lazy"><div><span>[Название]</span><b class="zm-todo">[цена]</b></div></figure>
+    </div></div>
+</div>
+</section>
+<section class="zm zm-sec zm-os">
+<style>
+.zm-os__list{list-style:none;margin:var(--zm-s5) 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:var(--zm-s3);counter-reset:st}
+.zm-os__list li{background:var(--zm-paper);border-radius:var(--zm-radius);padding:var(--zm-s4) var(--zm-s3);counter-increment:st;position:relative}
+.zm-os__list li::before{content:counter(st);display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--zm-red);color:#fff;font:700 28px/1 var(--zm-font-display);margin-bottom:var(--zm-s2)}
+.zm-os__list b{display:block;color:var(--zm-ink);font-size:18px;margin-bottom:6px}
+.zm-os__cta{margin-top:var(--zm-s5);text-align:center}
+@media (max-width:1000px){.zm-os__list{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.zm-os__list{grid-template-columns:1fr}}
+</style>
+<div class="zm-deco zm-star zm-star--l" style="right:6%;top:50px"></div>
+<div class="zm-wrap zm-z">
+  <h2 class="zm-h2">Как<br><span class="zm-red">заказать</span></h2>
+  <ol class="zm-os__list">
+    <li><b>Напишите</b>Расскажите повод, сроки и&nbsp;пришлите пример, если он&nbsp;есть.</li>
+    <li><b>Обсудим</b>Согласуем цвет, размер, материалы и&nbsp;стоимость.</li>
+    <li class="zm-todo"><b>Предоплата</b>[Условия: сколько и&nbsp;как оплачивается заранее]</li>
+    <li class="zm-todo"><b>Получение</b>[Самовывоз / доставка, сроки изготовления]</li>
+  </ol>
+  <div class="zm-os__cta"><a class="zm-btn zm-btn--accent" href="contacts.html?topic=order">Обсудить заказ</a></div>
+</div>
+</section>
+<section class="zm zm-sec zm-cta">
+<style>
+.zm-cta__box{background:var(--zm-ink);color:#fff;border-radius:40px;padding:var(--zm-s6);display:grid;grid-template-columns:1.3fr 1fr;gap:var(--zm-s5);align-items:center;position:relative;overflow:hidden}
+.zm-cta__box .zm-h2{color:#fff}
+.zm-cta__box p{font-size:18px;opacity:.92;margin-top:16px;max-width:44ch}
+.zm-cta__btns{display:grid;gap:12px}
+.zm-cta__btns .zm-btn{justify-content:center}
+.zm-cta__btns .zm-btn--ghost{color:#fff;border-color:#fff}
+.zm-cta__btns .zm-btn--ghost:hover{background:#fff;color:var(--zm-ink)}
+.zm-cta__dot{position:absolute;right:-60px;top:-60px;width:200px;height:200px;border-radius:50%;background:var(--zm-red);opacity:.9}
+@media (max-width:900px){.zm-cta__box{grid-template-columns:1fr;padding:var(--zm-s4) var(--zm-s3);border-radius:28px}}
+</style>
+<div class="zm-wrap zm-z">
+  <div class="zm-cta__box">
+    <span class="zm-cta__dot" aria-hidden="true"></span>
+    <div class="zm-z">
+      <h2 class="zm-h2">Не знаете,<br>с&nbsp;чего начать?</h2>
+      <p>Напишите, для кого занятие и&nbsp;сколько будет человек. Подберу мастер-класс и&nbsp;формат, отвечу на&nbsp;вопросы о&nbsp;материалах.</p>
+    </div>
+    <div class="zm-cta__btns zm-z">
+      <a class="zm-btn zm-btn--accent zm-todo" href="https://t.me/USERNAME">Написать в&nbsp;Telegram</a>
+      <a class="zm-btn zm-btn--ghost zm-todo" href="https://vk.com/USERNAME">Написать во&nbsp;ВКонтакте</a>
+      <a class="zm-btn zm-btn--ghost" href="contacts.html">Все контакты</a>
+    </div>
+  </div>
+</div>
+</section>
+<footer class="zm zm-ft">
+<style>
+.zm-ft{padding:var(--zm-s6) 0 var(--zm-s4);position:relative;overflow:hidden}
+.zm-ft__grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:var(--zm-s5)}
+.zm-ft__logo{width:150px;height:150px}
+.zm-ft__name{font:700 36px/1 var(--zm-font-display);text-transform:uppercase;color:var(--zm-red);margin-top:var(--zm-s3)}
+.zm-ft h3{font:700 18px/1.2 var(--zm-font-text);color:var(--zm-ink);margin-bottom:var(--zm-s3)}
+.zm-ft__menu{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.zm-ft__menu a{text-decoration:none;color:var(--zm-ink)}
+.zm-ft__menu a:hover{color:var(--zm-red)}
+.zm-ft__soc{display:flex;gap:12px}
+.zm-ft__soc a{width:44px;height:44px;border-radius:50%;background:var(--zm-ink);color:#fff;display:grid;place-items:center;text-decoration:none;font:700 13px/1 var(--zm-font-text)}
+.zm-ft__soc a:hover{background:var(--zm-red)}
+.zm-ft__copy{margin-top:var(--zm-s5);padding-top:var(--zm-s3);border-top:1px solid var(--zm-line);font-size:14px;color:var(--zm-muted);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media (max-width:800px){.zm-ft__grid{grid-template-columns:1fr}}
+</style>
+<div class="zm-deco zm-wave" style="right:-30px;bottom:-40px"></div>
+<div class="zm-deco zm-dot" style="left:30%;top:-30px;width:110px;height:110px"></div>
+<div class="zm-wrap zm-z">
+  <div class="zm-ft__grid">
+    <div>
+      <img class="zm-ft__logo" src="assets/decor/logo.svg" width="150" height="150" alt="">
+      <p class="zm-ft__name">Людмила Зюлина</p>
+      <p style="margin-top:12px;color:var(--zm-muted)">Автор мастер-классов для детей и&nbsp;взрослых.<br>Творю на&nbsp;заказ.</p>
+    </div>
+    <nav aria-label="Меню в подвале">
+      <h3>Меню</h3>
+      <ul class="zm-ft__menu">
+        <li><a href="workshops.html">Мастер-классы</a></li>
+        <li><a href="works.html">Работы на&nbsp;заказ</a></li>
+        <li><a href="about.html">Обо мне</a></li>
+        <li><a href="blog.html">Блог</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h3>Контакты</h3>
+      <div class="zm-ft__soc">
+        <a class="zm-todo" href="https://vk.com/USERNAME" aria-label="ВКонтакте">VK</a>
+        <a class="zm-todo" href="https://wa.me/79000000000" aria-label="WhatsApp">WA</a>
+        <a class="zm-todo" href="https://t.me/USERNAME" aria-label="Telegram">TG</a>
+      </div>
+      <p class="zm-todo" style="margin-top:var(--zm-s3)">+7 [телефон]<br>[e-mail]</p>
+    </div>
+  </div>
+  <div class="zm-ft__copy">
+    <span>© Творческая мастерская Людмилы Зюлиной</span>
+    <a class="zm-todo" href="privacy.html">Политика обработки персональных данных</a>
+  </div>
+</div>
+</footer>
+
+</div>
+</body>
+</html>

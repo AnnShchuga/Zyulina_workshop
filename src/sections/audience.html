@@ -1,0 +1,26 @@
+<section class="zm zm-sec zm-aud">
+<style>
+.zm-aud__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--zm-s3);margin-top:var(--zm-s5)}
+.zm-aud__item{border-radius:var(--zm-radius);padding:var(--zm-s4) var(--zm-s3);display:flex;flex-direction:column;gap:12px;text-decoration:none;color:var(--zm-text);transition:transform .2s}
+.zm-aud__item:hover{transform:translateY(-4px)}
+.zm-aud__item h3{font:700 28px/1 var(--zm-font-display);text-transform:uppercase;color:var(--zm-ink)}
+.zm-aud__item p{font-size:16px}
+.zm-aud__go{margin-top:auto;font-weight:700;color:var(--zm-ink)}
+@media (max-width:1000px){.zm-aud__grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.zm-aud__grid{grid-template-columns:1fr}}
+</style>
+<div class="zm-deco zm-dot" style="right:-40px;top:20px"></div>
+<div class="zm-wrap zm-z">
+  <h2 class="zm-h2">Кому<br><span class="zm-red">подойдёт</span></h2>
+  <div class="zm-aud__grid">
+    <a class="zm-aud__item" style="background:#FCE3DE" href="{{L:workshops}}">
+      <h3>Детям и&nbsp;родителям</h3><p>Занятия, после которых ребёнок уносит домой свою вещь, а&nbsp;не&nbsp;только впечатления.</p><span class="zm-aud__go">Выбрать занятие →</span></a>
+    <a class="zm-aud__item" style="background:#F3E4C6" href="{{L:contacts}}?topic=party">
+      <h3>На&nbsp;праздник</h3><p>Мастер-класс на&nbsp;день рождения, девичник или семейную встречу. <span class="zm-todo">Материалы: [уточнить, чьи]</span></p><span class="zm-aud__go">Обсудить праздник →</span></a>
+    <a class="zm-aud__item" style="background:#D6EEF3" href="{{L:contacts}}?topic=org">
+      <h3>Школам, библиотекам, компаниям</h3><p>Тематические программы к&nbsp;памятным датам, урокам литературы и&nbsp;корпоративным праздникам.</p><span class="zm-aud__go">Запросить программу →</span></a>
+    <a class="zm-aud__item" style="background:#E4DAF4" href="{{L:works}}">
+      <h3>В&nbsp;подарок</h3><p>Готовые работы, декор на&nbsp;заказ, а&nbsp;ещё видеоурок или инструкция, которые можно подарить.</p><span class="zm-aud__go">Смотреть работы →</span></a>
+  </div>
+</div>
+</section>

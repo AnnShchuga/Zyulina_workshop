@@ -1,0 +1,22 @@
+<section class="zm zm-sec zm-os">
+<style>
+.zm-os__list{list-style:none;margin:var(--zm-s5) 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:var(--zm-s3);counter-reset:st}
+.zm-os__list li{background:var(--zm-paper);border-radius:var(--zm-radius);padding:var(--zm-s4) var(--zm-s3);counter-increment:st;position:relative}
+.zm-os__list li::before{content:counter(st);display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--zm-red);color:#fff;font:700 28px/1 var(--zm-font-display);margin-bottom:var(--zm-s2)}
+.zm-os__list b{display:block;color:var(--zm-ink);font-size:18px;margin-bottom:6px}
+.zm-os__cta{margin-top:var(--zm-s5);text-align:center}
+@media (max-width:1000px){.zm-os__list{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.zm-os__list{grid-template-columns:1fr}}
+</style>
+<div class="zm-deco zm-star zm-star--l" style="right:6%;top:50px"></div>
+<div class="zm-wrap zm-z">
+  <h2 class="zm-h2">Как<br><span class="zm-red">заказать</span></h2>
+  <ol class="zm-os__list">
+    <li><b>Напишите</b>Расскажите повод, сроки и&nbsp;пришлите пример, если он&nbsp;есть.</li>
+    <li><b>Обсудим</b>Согласуем цвет, размер, материалы и&nbsp;стоимость.</li>
+    <li class="zm-todo"><b>Предоплата</b>[Условия: сколько и&nbsp;как оплачивается заранее]</li>
+    <li class="zm-todo"><b>Получение</b>[Самовывоз / доставка, сроки изготовления]</li>
+  </ol>
+  <div class="zm-os__cta"><a class="zm-btn zm-btn--accent" href="/contacts?topic=order">Обсудить заказ</a></div>
+</div>
+</section>

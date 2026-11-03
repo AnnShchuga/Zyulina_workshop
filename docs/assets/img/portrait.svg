@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+<rect width="600" height="600" fill="#E8523F"/>
+<circle cx="492" cy="132" r="84" fill="#FFFFFF" opacity=".25"/>
+<path d="M90 510 L228 300 L330 420 L420 336 L528 510Z" fill="#FFFFFF" opacity=".28"/>
+<text x="50%" y="46%" text-anchor="middle" font-family="PT Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">ЗАГЛУШКА</text>
+<text x="50%" y="56%" text-anchor="middle" font-family="PT Sans, Arial, sans-serif" font-size="18" fill="#FFFFFF">Портрет Людмилы</text>
+</svg>

@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Творческая мастерская Людмилы Зюлиной — мастер-классы по рукоделию онлайн и офлайн</title>
+<meta name="description" content="Мастер-классы по рукоделию для детей и взрослых: онлайн, офлайн, в записи и по инструкции с картинками. Декор и подарки на заказ.">
+<link rel="icon" href="assets/decor/logo.svg" type="image/svg+xml">
+</head>
+<body data-zm-page="index" style="margin:0">
+<div class="zm zm-page">
+<!-- 00-base: токены, шрифты, общие классы. В Тильде — ПЕРВЫЙ блок T123 на каждой странице. -->
+<style>
+/* Шрифты лежат в проекте (OFL 1.1), без запросов к Google */
+@font-face{font-family:'Yanone Kaffeesatz';font-style:normal;font-weight:500;font-display:swap;src:url('assets/fonts/yanone-kaffeesatz-cyrillic-500-normal.woff2') format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Yanone Kaffeesatz';font-style:normal;font-weight:500;font-display:swap;src:url('assets/fonts/yanone-kaffeesatz-latin-500-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Yanone Kaffeesatz';font-style:normal;font-weight:700;font-display:swap;src:url('assets/fonts/yanone-kaffeesatz-cyrillic-700-normal.woff2') format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Yanone Kaffeesatz';font-style:normal;font-weight:700;font-display:swap;src:url('assets/fonts/yanone-kaffeesatz-latin-700-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'PT Sans';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/pt-sans-cyrillic-400-normal.woff2') format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'PT Sans';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/pt-sans-latin-400-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'PT Sans';font-style:normal;font-weight:700;font-display:swap;src:url('assets/fonts/pt-sans-cyrillic-700-normal.woff2') format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'PT Sans';font-style:normal;font-weight:700;font-display:swap;src:url('assets/fonts/pt-sans-latin-700-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+</style>
+<style>
+.zm{
+  /* Цвета сняты пипеткой с концепта */
+  --zm-bg:#F8F5F0;        /* тёплый молочный фон */
+  --zm-paper:#FFFDF9;     /* карточки */
+  --zm-ink:#435A67;       /* сланцевый: заголовки, кнопки */
+  --zm-ink-dark:#34474F;  /* hover для сланцевого */
+  --zm-red:#E8523F;       /* коралловый акцент */
+  --zm-red-dark:#C9402F;
+  --zm-text:#2B2B2B;      /* основной текст, не чистый чёрный */
+  --zm-muted:#5F6B70;     /* второстепенный текст, контраст ≥4.5:1 на фоне */
+  --zm-line:#E4DED4;
+  --zm-peach:#F6C9A3; --zm-pink:#F2A7A2; --zm-lilac:#C9B6E8; --zm-teal:#3AA0B8;
+  /* Шрифты. Заголовочный — временная замена, пока нет названия шрифта из Figma */
+  --zm-font-display:'Yanone Kaffeesatz','Arial Narrow',sans-serif;
+  --zm-font-text:'PT Sans',Arial,sans-serif;
+  /* Шкала отступов, база 8 px */
+  --zm-s1:8px;--zm-s2:16px;--zm-s3:24px;--zm-s4:32px;--zm-s5:48px;--zm-s6:64px;--zm-s7:96px;
+  --zm-radius:24px; --zm-radius-s:12px;
+  --zm-max:1200px;
+  --zm-assets:'assets';
+  font-family:var(--zm-font-text);color:var(--zm-text);
+  font-size:17px;line-height:1.45;
+  -webkit-font-smoothing:antialiased;
+}
+.zm,.zm *{box-sizing:border-box}
+.zm img{max-width:100%;display:block}
+.zm a{color:inherit}
+.zm h1,.zm h2,.zm h3,.zm p{margin:0}
+.zm-page{background:var(--zm-bg) url('assets/decor/seigaiha-bg.svg') repeat;background-size:120px 60px}
+.zm-wrap{max-width:var(--zm-max);margin:0 auto;padding:0 var(--zm-s3);position:relative}
+.zm-sec{position:relative;padding:var(--zm-s7) 0;overflow:hidden}
+
+/* Заголовки: две строки, сланцевая + коралловая, как в концепте */
+.zm-h1,.zm-h2{font-family:var(--zm-font-display);font-weight:700;text-transform:uppercase;line-height:.92;letter-spacing:.01em}
+.zm-h1,.zm-h2,.zm-h3{overflow-wrap:break-word}
+.zm-h1{font-size:clamp(48px,8.4vw,116px);color:var(--zm-ink)}
+.zm-h2{font-size:clamp(40px,6vw,84px);color:var(--zm-ink)}
+.zm-h3{font-family:var(--zm-font-display);font-weight:700;text-transform:uppercase;font-size:30px;line-height:1;color:var(--zm-ink)}
+.zm-red{color:var(--zm-red)}
+.zm-lead{font-size:19px;line-height:1.5;max-width:56ch}
+.zm-muted{color:var(--zm-muted)}
+
+/* Кнопки */
+.zm-btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:12px 26px;border-radius:999px;
+  font:700 16px/1 var(--zm-font-text);text-decoration:none;cursor:pointer;border:2px solid var(--zm-ink);
+  background:var(--zm-ink);color:#fff;transition:background .2s,color .2s,transform .2s}
+.zm-btn:hover{background:var(--zm-ink-dark);border-color:var(--zm-ink-dark)}
+.zm-btn:active{transform:translateY(1px)}
+.zm-btn:focus-visible{outline:3px solid var(--zm-red);outline-offset:3px}
+.zm-btn--accent{background:var(--zm-red);border-color:var(--zm-red)}
+.zm-btn--accent:hover{background:var(--zm-red-dark);border-color:var(--zm-red-dark)}
+.zm-btn--ghost{background:transparent;color:var(--zm-ink)}
+.zm-btn--ghost:hover{background:var(--zm-ink);color:#fff}
+.zm-btn--s{min-height:40px;padding:8px 18px;font-size:15px}
+
+/* Метки форматов: цвет продублирован словом — не полагаемся только на цвет */
+.zm-tag{display:inline-block;padding:5px 12px;border-radius:999px;font:700 13px/1.2 var(--zm-font-text);background:var(--zm-ink);color:#fff}
+.zm-tag--online{background:#2E7F93}
+.zm-tag--offline{background:var(--zm-red-dark)}
+.zm-tag--rec{background:#6A55A0}
+.zm-tag--pdf{background:#7A5A1E}
+
+/* Декор: звёзды, круги, «волны» */
+.zm-deco{position:absolute;pointer-events:none;z-index:0}
+.zm-star{width:48px;height:48px;background:var(--zm-ink);clip-path:polygon(50% 0,61% 39%,100% 50%,61% 61%,50% 100%,39% 61%,0 50%,39% 39%)}
+.zm-star--s{width:22px;height:22px}
+.zm-star--l{width:84px;height:84px}
+.zm-dot{width:150px;height:150px;border-radius:50%;background:var(--zm-red)}
+.zm-wave{width:200px;height:200px;border-radius:50%;background:url('assets/decor/seigaiha-dark.svg') center/56px 28px}
+.zm-z{position:relative;z-index:1}
+
+/* Горизонтальная лента карточек со стрелками */
+.zm-rail{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(280px,1fr);gap:var(--zm-s3);overflow-x:auto;scroll-snap-type:x mandatory;padding:8px 4px 16px;scrollbar-width:thin}
+.zm-rail>*{scroll-snap-align:start}
+.zm-arrows{display:flex;gap:12px}
+.zm-arrow{width:48px;height:48px;border-radius:50%;border:2px solid var(--zm-ink);background:transparent;color:var(--zm-ink);font-size:20px;cursor:pointer}
+.zm-arrow--fill{background:var(--zm-ink);color:#fff}
+.zm-arrow:focus-visible{outline:3px solid var(--zm-red);outline-offset:3px}
+
+/* Пометка «заменить»: видна только на превью GitHub, чтобы не забыть */
+.zm-todo{outline:2px dashed var(--zm-red);outline-offset:4px}
+
+@media (max-width:768px){
+  .zm{font-size:16px}
+  .zm-sec{padding:var(--zm-s6) 0}
+  .zm-wrap{padding:0 var(--zm-s2)}
+  .zm-dot{width:90px;height:90px}
+  .zm-wave{width:120px;height:120px}
+  .zm-star--l{display:none}
+}
+@media (prefers-reduced-motion:reduce){.zm *{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+<header class="zm zm-hd" id="top">
+<style>
+.zm-hd{position:relative;z-index:20;padding:20px 0}
+.zm-hd .zm-wrap{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.zm-hd__logo{display:block;width:104px;height:104px;flex:none}
+.zm-hd__nav{display:flex;align-items:center;gap:36px}
+.zm-hd__nav a{text-decoration:none;font-weight:700;font-size:16px;color:var(--zm-ink);padding:8px 0;border-bottom:2px solid transparent}
+.zm-hd__nav a:hover,.zm-hd__nav a[aria-current]{border-color:var(--zm-red)}
+.zm-hd__nav .zm-btn{color:#fff;border-bottom-width:2px;padding:10px 22px}
+.zm-hd__nav .zm-btn:hover{border-color:var(--zm-ink-dark)}
+.zm-hd__burger{display:none;width:48px;height:48px;border-radius:50%;border:2px solid var(--zm-ink);background:var(--zm-paper);cursor:pointer;position:relative}
+.zm-hd__burger span,.zm-hd__burger span::before,.zm-hd__burger span::after{position:absolute;left:12px;width:20px;height:2px;background:var(--zm-ink);content:'';transition:transform .2s}
+.zm-hd__burger span{top:22px}.zm-hd__burger span::before{left:0;top:-6px}.zm-hd__burger span::after{left:0;top:6px}
+@media (max-width:900px){
+  .zm-hd__logo{width:76px;height:76px}
+  .zm-hd__burger{display:block}
+  .zm-hd__nav{position:absolute;top:100%;left:16px;right:16px;flex-direction:column;align-items:stretch;gap:0;
+    background:var(--zm-paper);border-radius:var(--zm-radius);box-shadow:0 18px 40px rgba(52,71,79,.18);padding:12px 20px 20px;display:none}
+  .zm-hd.is-open .zm-hd__nav{display:flex}
+  .zm-hd__nav a{padding:14px 0;border-bottom:1px solid var(--zm-line)}
+  .zm-hd__nav .zm-btn{margin-top:16px;justify-content:center;border-bottom:2px solid var(--zm-ink)}
+}
+</style>
+<div class="zm-wrap">
+  <a class="zm-hd__logo" href="index.html" aria-label="На главную">
+    <img src="assets/decor/logo.svg" width="104" height="104" alt="Творческая мастерская Людмилы Зюлиной">
+  </a>
+  <button class="zm-hd__burger" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  <nav class="zm-hd__nav" aria-label="Основное меню">
+    <a href="workshops.html" data-page="workshops">Мастер-классы</a>
+    <a href="works.html" data-page="works">Работы на заказ</a>
+    <a href="about.html" data-page="about">Обо мне</a>
+    <a href="blog.html" data-page="blog">Блог</a>
+    <a class="zm-btn" href="contacts.html" data-page="contacts">Записаться</a>
+  </nav>
+</div>
+<script>
+(function(){
+  var hd=document.currentScript.closest('.zm-hd');
+  var b=hd.querySelector('.zm-hd__burger');
+  b.addEventListener('click',function(){
+    var o=hd.classList.toggle('is-open');
+    b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Закрыть меню':'Открыть меню');
+  });
+  var cur=document.body.getAttribute('data-zm-page')||(location.pathname.split('/').pop().replace('.html','')||'index');
+  if(cur){var a=hd.querySelector('[data-page="'+cur+'"]');if(a)a.setAttribute('aria-current','page');}
+})();
+</script>
+</header>
+<section class="zm zm-sec zm-hero">
+<style>
+.zm-hero{padding:16px 0 var(--zm-s7)}
+.zm-hero__top{display:grid;grid-template-columns:1fr 340px;gap:var(--zm-s4);align-items:end}
+.zm-hero__side{display:flex;flex-direction:column;gap:var(--zm-s3)}
+.zm-hero__side p{font-size:18px;line-height:1.5}
+.zm-hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:var(--zm-s4)}
+.zm-hero__photo{margin-top:var(--zm-s5);border-radius:32px;overflow:hidden;aspect-ratio:2/0.88;background:var(--zm-peach)}
+.zm-hero__photo img{width:100%;height:100%;object-fit:cover}
+.zm-hero__facts{display:flex;flex-wrap:wrap;gap:var(--zm-s4);margin-top:var(--zm-s4)}
+.zm-hero__facts b{display:block;font:700 44px/1 var(--zm-font-display);color:var(--zm-red)}
+.zm-hero__facts span{font-size:15px;color:var(--zm-muted)}
+@media (max-width:900px){.zm-hero__top{grid-template-columns:1fr}.zm-hero__photo{aspect-ratio:4/3}}
+</style>
+<div class="zm-deco zm-dot" style="right:7%;top:-10px"></div>
+<div class="zm-deco zm-star zm-star--s" style="right:6%;top:58px;background:var(--zm-ink)"></div>
+<div class="zm-wrap zm-z">
+  <div class="zm-hero__top">
+    <div>
+      <h1 class="zm-h1">Творческая мастерская<br><span class="zm-red">Людмилы Зюлиной</span></h1>
+      <div class="zm-hero__cta">
+        <a class="zm-btn zm-btn--accent" href="workshops.html">Выбрать мастер-класс</a>
+        <a class="zm-btn zm-btn--ghost" href="works.html">Заказать работу</a>
+      </div>
+    </div>
+    <div class="zm-hero__side">
+      <p>Мастер-классы по&nbsp;рукоделию для детей и&nbsp;взрослых: онлайн, вживую, в&nbsp;записи или по&nbsp;инструкции с&nbsp;картинками. Делаю декор и&nbsp;подарки на&nbsp;заказ.</p>
+    </div>
+  </div>
+  <div class="zm-hero__photo"><img src="assets/img/hero.svg" alt="Кисти и краски в мастерской" class="zm-todo"></div>
+  <div class="zm-hero__facts">
+    <div><b>7+ лет</b><span>веду мастер-классы</span></div>
+    <div><b>5 лет</b><span>провожу занятия онлайн</span></div>
+    <div><b>4 формата</b><span>онлайн, офлайн, видео, инструкции</span></div>
+  </div>
+</div>
+</section>
+<section class="zm zm-sec zm-fmt" id="formats">
+<style>
+.zm-fmt__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--zm-s3);margin-top:var(--zm-s5)}
+.zm-fmt__card{background:var(--zm-paper);border-radius:var(--zm-radius);padding:var(--zm-s4);display:flex;flex-direction:column;gap:var(--zm-s2);box-shadow:0 10px 30px rgba(67,90,103,.08);border:2px solid transparent;transition:border-color .2s}
+.zm-fmt__card:hover{border-color:var(--zm-ink)}
+.zm-fmt__icon{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;font-size:30px}
+.zm-fmt__card ul{margin:0;padding-left:20px;display:grid;gap:6px;color:var(--zm-muted)}
+.zm-fmt__price{margin-top:auto;padding-top:var(--zm-s2);font-weight:700;color:var(--zm-ink)}
+@media (max-width:1100px){.zm-fmt__grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.zm-fmt__grid{grid-template-columns:1fr}}
+</style>
+<div class="zm-deco zm-star zm-star--l" style="left:3%;top:40px"></div>
+<div class="zm-wrap zm-z">
+  <h2 class="zm-h2">Как можно<br><span class="zm-red">заниматься</span></h2>
+  <p class="zm-lead zm-muted" style="margin-top:16px">Выберите формат, который подходит по&nbsp;времени и&nbsp;месту. Программа и&nbsp;внимание к&nbsp;результату одинаковые.</p>
+  <div class="zm-fmt__grid">
+    <article class="zm-fmt__card">
+      <div class="zm-fmt__icon" style="background:#D6EEF3" aria-hidden="true">💻</div>
+      <span class="zm-tag zm-tag--online" style="align-self:flex-start">Онлайн</span>
+      <h3 class="zm-h3">Вместе, но&nbsp;из&nbsp;дома</h3>
+      <ul><li>Занятие в&nbsp;прямом эфире, можно задать вопрос</li><li>Список материалов заранее</li><li>Подходит для любого города</li></ul>
+      <p class="zm-fmt__price zm-todo">Стоимость: [указать]</p>
+      <a class="zm-btn zm-btn--s" href="workshops.html#online">Смотреть расписание</a>
+    </article>
+    <article class="zm-fmt__card">
+      <div class="zm-fmt__icon" style="background:#FBD9D3" aria-hidden="true">🎨</div>
+      <span class="zm-tag zm-tag--offline" style="align-self:flex-start">Офлайн</span>
+      <h3 class="zm-h3">Вживую, за&nbsp;одним столом</h3>
+      <ul><li>Для детей, взрослых и&nbsp;семей</li><li>Праздники и&nbsp;дни рождения</li><li>Выезд в&nbsp;школы, библиотеки, компании</li></ul>
+      <p class="zm-fmt__price zm-todo">Стоимость: [указать]</p>
+      <a class="zm-btn zm-btn--s" href="contacts.html">Обсудить дату</a>
+    </article>
+    <article class="zm-fmt__card">
+      <div class="zm-fmt__icon" style="background:#E4DAF4" aria-hidden="true">▶</div>
+      <span class="zm-tag zm-tag--rec" style="align-self:flex-start">В записи</span>
+      <h3 class="zm-h3">Когда удобно вам</h3>
+      <ul><li>Видеоурок остаётся у&nbsp;вас</li><li>Можно ставить на&nbsp;паузу и&nbsp;пересматривать</li><li>Хороший подарок</li></ul>
+      <p class="zm-fmt__price zm-todo">Стоимость: [указать]</p>
+      <a class="zm-btn zm-btn--s" href="workshops.html#rec">Выбрать урок</a>
+    </article>
+    <article class="zm-fmt__card">
+      <div class="zm-fmt__icon" style="background:#F3E4C6" aria-hidden="true">📖</div>
+      <span class="zm-tag zm-tag--pdf" style="align-self:flex-start">Инструкция</span>
+      <h3 class="zm-h3">Шаг за&nbsp;шагом в&nbsp;картинках</h3>
+      <ul><li>PDF с&nbsp;фото каждого шага и&nbsp;шаблонами</li><li>Можно распечатать и&nbsp;работать за&nbsp;столом</li><li>Приходит сразу после оплаты</li></ul>
+      <p class="zm-fmt__price zm-todo">Стоимость: [указать]</p>
+      <a class="zm-btn zm-btn--s" href="workshops.html#pdf">Выбрать инструкцию</a>
+    </article>
+  </div>
+</div>
+</section>
+<section class="zm zm-sec zm-mk" id="workshops">
+<style>
+.zm-mk__head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:var(--zm-s5)}
+.zm-mk__tools{display:flex;gap:16px;align-items:center}
+.zm-mk__card{background:var(--zm-paper);border-radius:var(--zm-radius);padding:var(--zm-s3);display:flex;flex-direction:column;gap:var(--zm-s2);border:3px solid transparent;transition:border-color .2s;min-height:100%}
+.zm-mk__card:hover{border-color:var(--zm-ink)}
+.zm-mk__media{position:relative;border-radius:var(--zm-radius-s);overflow:hidden;aspect-ratio:16/10;background:var(--zm-peach)}
+.zm-mk__media img{width:100%;height:100%;object-fit:cover}
+.zm-mk__play{position:absolute;inset:0;margin:auto;width:52px;height:52px;border-radius:50%;background:rgba(20,20,20,.78);display:grid;place-items:center;color:#fff;font-size:18px}
+.zm-mk__tags{display:flex;gap:6px;flex-wrap:wrap}
+.zm-mk__meta{color:var(--zm-muted);font-size:15px}
+.zm-mk__foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:8px}
+.zm-mk__price{font-weight:700;color:var(--zm-ink)}
+</style>
+<div class="zm-deco zm-wave" style="left:24%;top:30px"></div>
+<div class="zm-deco zm-star zm-star--s" style="right:30%;top:90px"></div>
+<div class="zm-wrap zm-z">
+  <div class="zm-mk__head">
+    <h2 class="zm-h2">Мастер-<br><span class="zm-red">классы</span></h2>
+    <div class="zm-mk__tools">
+      <a class="zm-btn zm-btn--ghost zm-btn--s" href="workshops.html">Все мастер-классы</a>
+      <div class="zm-arrows">
+        <button class="zm-arrow" type="button" data-dir="-1" aria-label="Назад">←</button>
+        <button class="zm-arrow zm-arrow--fill" type="button" data-dir="1" aria-label="Вперёд">→</button>
+      </div>
+    </div>
+  </div>
+  <div class="zm-rail">
+    <article class="zm-mk__card">
+      <h3 class="zm-h3">Декупаж деревянных ложек</h3>
+      <div class="zm-mk__media"><img src="assets/img/mk-decoupage.svg" alt="Расписные деревянные ложки" class="zm-todo" loading="lazy"><span class="zm-mk__play" aria-hidden="true">▶</span></div>
+      <div class="zm-mk__tags"><span class="zm-tag zm-tag--online">Онлайн</span><span class="zm-tag zm-tag--offline">Офлайн</span><span class="zm-tag zm-tag--rec">В записи</span></div>
+      <p class="zm-mk__meta zm-todo">Возраст: [указать] · Длительность: [указать]</p>
+      <div class="zm-mk__foot"><span class="zm-mk__price zm-todo">[цена]</span><a class="zm-btn zm-btn--s" href="contacts.html?mk=decoupage">Записаться</a></div>
+    </article>
+    <article class="zm-mk__card">
+      <h3 class="zm-h3">Кардмейкинг: открытки своими руками</h3>
+      <div class="zm-mk__media"><img src="assets/img/mk-cardmaking.svg" alt="Открытка ручной работы" class="zm-todo" loading="lazy"><span class="zm-mk__play" aria-hidden="true">▶</span></div>
+      <div class="zm-mk__tags"><span class="zm-tag zm-tag--online">Онлайн</span><span class="zm-tag zm-tag--offline">Офлайн</span></div>
+      <p class="zm-mk__meta zm-todo">Возраст: [указать] · Длительность: [указать]</p>
+      <div class="zm-mk__foot"><span class="zm-mk__price zm-todo">[цена]</span><a class="zm-btn zm-btn--s" href="contacts.html?mk=cardmaking">Записаться</a></div>
+    </article>
+    <article class="zm-mk__card">
+      <h3 class="zm-h3">Композиция «Одуванчик»</h3>
+      <div class="zm-mk__media"><img src="assets/img/mk-dandelion.svg" alt="Аппликация с одуванчиками" class="zm-todo" loading="lazy"><span class="zm-mk__play" aria-hidden="true">▶</span></div>
+      <div class="zm-mk__tags"><span class="zm-tag zm-tag--offline">Офлайн</span><span class="zm-tag zm-tag--rec">В записи</span><span class="zm-tag zm-tag--pdf">Инструкция</span></div>
+      <p class="zm-mk__meta zm-todo">Возраст: [указать] · Длительность: [указать]</p>
+      <div class="zm-mk__foot"><span class="zm-mk__price zm-todo">[цена]</span><a class="zm-btn zm-btn--s" href="contacts.html?mk=dandelion">Записаться</a></div>
+    </article>
+    <article class="zm-mk__card">
+      <h3 class="zm-h3">Новогодний венок</h3>
+      <div class="zm-mk__media"><img src="assets/img/work-newyear.svg" alt="Новогодний венок" class="zm-todo" loading="lazy"><span class="zm-mk__play" aria-hidden="true">▶</span></div>
+      <div class="zm-mk__tags"><span class="zm-tag zm-tag--offline">Офлайн</span><span class="zm-tag zm-tag--online">Онлайн</span></div>
+      <p class="zm-mk__meta zm-todo">Возраст: [указать] · Длительность: [указать]</p>
+      <div class="zm-mk__foot"><span class="zm-mk__price zm-todo">[цена]</span><a class="zm-btn zm-btn--s" href="contacts.html?mk=wreath">Записаться</a></div>
+    </article>
+  </div>
+</div>
+<script>
+(function(){
+  var s=document.currentScript.closest('section'),r=s.querySelector('.zm-rail');
+  s.querySelectorAll('[data-dir]').forEach(function(b){b.addEventListener('click',function(){
+    var c=r.firstElementChild;r.scrollBy({left:(+b.dataset.dir)*((c?c.offsetWidth:300)+24),behavior:'smooth'});});});
+})();
+</script>
+</section>
+<section class="zm zm-sec zm-aud">
+<style>
+.zm-aud__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--zm-s3);margin-top:var(--zm-s5)}
+.zm-aud__item{border-radius:var(--zm-radius);padding:var(--zm-s4) var(--zm-s3);display:flex;flex-direction:column;gap:12px;text-decoration:none;color:var(--zm-text);transition:transform .2s}
+.zm-aud__item:hover{transform:translateY(-4px)}
+.zm-aud__item h3{font:700 28px/1 var(--zm-font-display);text-transform:uppercase;color:var(--zm-ink)}
+.zm-aud__item p{font-size:16px}
+.zm-aud__go{margin-top:auto;font-weight:700;color:var(--zm-ink)}
+@media (max-width:1000px){.zm-aud__grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.zm-aud__grid{grid-template-columns:1fr}}
+</style>
+<div class="zm-deco zm-dot" style="right:-40px;top:20px"></div>
+<div class="zm-wrap zm-z">
+  <h2 class="zm-h2">Кому<br><span class="zm-red">подойдёт</span></h2>
+  <div class="zm-aud__grid">
+    <a class="zm-aud__item" style="background:#FCE3DE" href="workshops.html">
+      <h3>Детям и&nbsp;родителям</h3><p>Занятия, после которых ребёнок уносит домой свою вещь, а&nbsp;не&nbsp;только впечатления.</p><span class="zm-aud__go">Выбрать занятие →</span></a>
+    <a class="zm-aud__item" style="background:#F3E4C6" href="contacts.html?topic=party">
+      <h3>На&nbsp;праздник</h3><p>Мастер-класс на&nbsp;день рождения, девичник или семейную встречу. <span class="zm-todo">Материалы: [уточнить, чьи]</span></p><span class="zm-aud__go">Обсудить праздник →</span></a>
+    <a class="zm-aud__item" style="background:#D6EEF3" href="contacts.html?topic=org">
+      <h3>Школам, библиотекам, компаниям</h3><p>Тематические программы к&nbsp;памятным датам, урокам литературы и&nbsp;корпоративным праздникам.</p><span class="zm-aud__go">Запросить программу →</span></a>
+    <a class="zm-aud__item" style="background:#E4DAF4" href="works.html">
+      <h3>В&nbsp;подарок</h3><p>Готовые работы, декор на&nbsp;заказ, а&nbsp;ещё видеоурок или инструкция, которые можно подарить.</p><span class="zm-aud__go">Смотреть работы →</span></a>
+  </div>
+</div>
+</section>
+<section class="zm zm-sec zm-gal" id="works">
+<style>
+.zm-gal__head{display:grid;grid-template-columns:1fr 1fr;gap:var(--zm-s4);align-items:end}
+.zm-gal__head p{max-width:46ch}
+.zm-gal__grid{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--zm-s3);margin-top:var(--zm-s6)}
+.zm-gal__item{position:relative;text-decoration:none;color:inherit}
+.zm-gal__item:nth-child(1){grid-column:2/span 4}
+.zm-gal__item:nth-child(2){grid-column:8/span 5;margin-top:120px}
+.zm-gal__item:nth-child(3){grid-column:1/span 5;margin-top:-40px}
+.zm-gal__item:nth-child(4){grid-column:7/span 5;margin-top:60px}
+.zm-gal__blob{border-radius:36% 18% 40% 22%/28% 36% 22% 40%;overflow:hidden;aspect-ratio:5/4}
+.zm-gal__blob img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.zm-gal__item:hover img{transform:scale(1.04)}
+.zm-gal__label{position:absolute;top:18px;right:-10px;background:var(--zm-ink);color:#fff;font-weight:700;font-size:15px;padding:8px 16px;border-radius:999px}
+.zm-gal__item:nth-child(odd) .zm-gal__label{right:auto;left:-10px}
+.zm-gal__cta{margin-top:var(--zm-s6);display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+@media (max-width:900px){
+  .zm-gal__head{grid-template-columns:1fr}
+  .zm-gal__grid{grid-template-columns:1fr 1fr}
+  .zm-gal__item:nth-child(n){grid-column:auto;margin-top:0}
+  .zm-gal__label{right:8px!important;left:auto!important;top:8px;font-size:13px}
+}
+@media (max-width:520px){.zm-gal__grid{grid-template-columns:1fr}}
+</style>
+<div class="zm-deco zm-dot" style="left:62%;top:40px"></div>
+<div class="zm-deco zm-wave" style="right:4%;top:280px"></div>
+<div class="zm-deco zm-star zm-star--l" style="left:46%;top:430px"></div>
+<div class="zm-wrap zm-z">
+  <div class="zm-gal__head">
+    <h2 class="zm-h2">Работы<br><span class="zm-red">на&nbsp;заказ</span></h2>
+    <div>
+      <p>Новогодний и&nbsp;свадебный декор, открытки, куклы. Часть работ можно купить готовыми, похожую можно заказать: по&nbsp;вашему цвету, размеру и&nbsp;поводу.</p>
+    </div>
+  </div>
+  <div class="zm-gal__grid">
+    <a class="zm-gal__item" href="works.html#newyear"><div class="zm-gal__blob" style="background:var(--zm-peach)"><img class="zm-todo" src="assets/img/work-newyear.svg" alt="Новогодний венок" loading="lazy"></div><span class="zm-gal__label">Новогодний декор</span></a>
+    <a class="zm-gal__item" href="works.html#cards"><div class="zm-gal__blob" style="background:var(--zm-pink)"><img class="zm-todo" src="assets/img/work-cards.svg" alt="Открытки ручной работы" loading="lazy"></div><span class="zm-gal__label">Открытки</span></a>
+    <a class="zm-gal__item" href="works.html#wedding"><div class="zm-gal__blob" style="background:var(--zm-lilac)"><img class="zm-todo" src="assets/img/work-wedding.svg" alt="Свадебные бокалы и бутылки с декором" loading="lazy"></div><span class="zm-gal__label">Свадебный декор</span></a>
+    <a class="zm-gal__item" href="works.html#dolls"><div class="zm-gal__blob" style="background:var(--zm-teal)"><img class="zm-todo" src="assets/img/work-dolls.svg" alt="Куклы в разных техниках" loading="lazy"></div><span class="zm-gal__label">Куклы в&nbsp;разных техниках</span></a>
+  </div>
+  <div class="zm-gal__cta">
+    <a class="zm-btn zm-btn--accent" href="contacts.html?topic=order">Хочу такую же</a>
+    <a class="zm-btn zm-btn--ghost" href="works.html">Все работы</a>
+  </div>
+</div>
+</section>
+<section class="zm zm-sec zm-ab" id="about">
+<style>
+.zm-ab__box{display:grid;grid-template-columns:300px 1fr;gap:var(--zm-s6);align-items:center}
+.zm-ab__photo{width:300px;height:300px;border-radius:50%;background:var(--zm-red);overflow:hidden;border:6px solid var(--zm-paper);box-shadow:0 16px 40px rgba(232,82,63,.25)}
+.zm-ab__photo img{width:100%;height:100%;object-fit:cover}
+.zm-ab__text{display:grid;gap:var(--zm-s2);max-width:62ch}
+.zm-ab__text p{font-size:18px;line-height:1.55}
+@media (max-width:800px){.zm-ab__box{grid-template-columns:1fr;justify-items:center;gap:var(--zm-s4)}.zm-ab__photo{width:220px;height:220px}}
+</style>
+<div class="zm-deco zm-star zm-star--l" style="left:2%;top:90px"></div>
+<div class="zm-deco zm-dot" style="left:-50px;top:170px"></div>
+<div class="zm-deco zm-star" style="right:10%;top:60px"></div>
+<div class="zm-wrap zm-z">
+  <div class="zm-ab__box">
+    <div class="zm-ab__photo"><img class="zm-todo" src="assets/img/portrait.svg" alt="Людмила Зюлина" loading="lazy"></div>
+    <div class="zm-ab__text">
+      <h2 class="zm-h2" style="font-size:clamp(38px,5vw,64px)">Давайте<br><span class="zm-red">знакомиться!</span></h2>
+      <p>Меня зовут Людмила. Я&nbsp;хозяйка этой творческой мастерской: создаю мастер-классы для детей и&nbsp;взрослых, а&nbsp;ещё творю для души и&nbsp;на&nbsp;заказ.</p>
+      <p>По&nbsp;образованию я&nbsp;библиотекарь. Много лет работала в&nbsp;детских и&nbsp;юношеских библиотеках, больше 7&nbsp;лет веду мастер-классы, последние 5&nbsp;лет&nbsp;— ещё и&nbsp;онлайн. Отзывы детей, родителей и&nbsp;клиентов помогли мне набраться смелости, уйти с&nbsp;работы и&nbsp;открыть своё дело.</p>
+      <div><a class="zm-btn zm-btn--ghost zm-btn--s" href="about.html">Подробнее обо мне</a></div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="zm zm-sec zm-rv">
+<style>
+.zm-rv__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--zm-s3);margin-top:var(--zm-s5)}
+.zm-rv__card{background:var(--zm-paper);border-radius:var(--zm-radius);padding:var(--zm-s4);display:flex;flex-direction:column;gap:var(--zm-s2);position:relative}
+.zm-rv__card::before{content:'«';position:absolute;top:-6px;right:24px;font:700 96px/1 var(--zm-font-display);color:var(--zm-red);opacity:.35}
+.zm-rv__who{display:flex;align-items:center;gap:12px;margin-top:auto}
+.zm-rv__ava{width:44px;height:44px;border-radius:50%;background:var(--zm-lilac)}
+.zm-rv__who b{display:block;color:var(--zm-ink)}
+.zm-rv__who span{font-size:14px;color:var(--zm-muted)}
+@media (max-width:900px){.zm-rv__grid{grid-template-columns:1fr}}
+</style>
+<div class="zm-deco zm-wave" style="left:-60px;bottom:20px"></div>
+<div class="zm-wrap zm-z">
+  <h2 class="zm-h2">Что<br><span class="zm-red">говорят</span></h2>
+  <!-- ЗАГЛУШКИ: заменить реальными отзывами с разрешения авторов. Выдуманные отзывы не публиковать. -->
+  <div class="zm-rv__grid">
+    <figure class="zm-rv__card zm-todo" style="margin:0"><blockquote style="margin:0">[Текст реального отзыва родителя: что делали, что понравилось ребёнку]</blockquote><figcaption class="zm-rv__who"><span class="zm-rv__ava"></span><span><b>[Имя]</b><span>[мастер-класс, формат]</span></span></figcaption></figure>
+    <figure class="zm-rv__card zm-todo" style="margin:0"><blockquote style="margin:0">[Отзыв взрослого участника онлайн-занятия]</blockquote><figcaption class="zm-rv__who"><span class="zm-rv__ava" style="background:var(--zm-peach)"></span><span><b>[Имя]</b><span>[мастер-класс, формат]</span></span></figcaption></figure>
+    <figure class="zm-rv__card zm-todo" style="margin:0"><blockquote style="margin:0">[Отзыв заказчика работы: что заказывал, к какому поводу]</blockquote><figcaption class="zm-rv__who"><span class="zm-rv__ava" style="background:var(--zm-teal)"></span><span><b>[Имя]</b><span>[работа на заказ]</span></span></figcaption></figure>
+  </div>
+</div>
+</section>
+<section class="zm zm-sec zm-bl" id="blog">
+<!-- В Тильде этот блок лучше заменить на «Потоки» (блог с карточками), чтобы Людмила добавляла посты сама. Код оставлен как эталон вида карточки. -->
+<style>
+.zm-bl__head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:var(--zm-s5)}
+.zm-bl__note{font-size:16px;color:var(--zm-muted);max-width:28ch}
+.zm-bl .zm-rail{grid-auto-columns:minmax(300px,380px)}
+.zm-bl__post{background:#232323;color:#F1F1F1;border-radius:20px;overflow:hidden;display:flex;flex-direction:column}
+.zm-bl__top{display:flex;align-items:center;gap:10px;padding:12px 16px;font-size:15px}
+.zm-bl__ava{width:32px;height:32px;border-radius:50%;background:var(--zm-red);flex:none}
+.zm-bl__pic{position:relative;aspect-ratio:4/3;background:#3a3a3a}
+.zm-bl__pic img{width:100%;height:100%;object-fit:cover}
+.zm-bl__count{position:absolute;top:12px;right:12px;background:rgba(0,0,0,.6);border-radius:999px;padding:4px 10px;font-size:13px}
+.zm-bl__txt{margin:16px 16px 12px;padding:0;font-size:15px;line-height:1.5;display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;overflow:hidden}
+.zm-bl__more{padding:0 16px 16px;color:#FFB4A9;font-weight:700;text-decoration:none;font-size:15px}
+</style>
+<div class="zm-deco zm-star zm-star--l" style="left:38%;top:30px"></div>
+<div class="zm-wrap zm-z">
+  <div class="zm-bl__head">
+    <h2 class="zm-h2">Блог</h2>
+    <p class="zm-bl__note">Одним глазком тут можно подглядеть за&nbsp;волшебством</p>
+    <div class="zm-arrows">
+      <button class="zm-arrow" type="button" data-dir="-1" aria-label="Назад">←</button>
+      <button class="zm-arrow zm-arrow--fill" type="button" data-dir="1" aria-label="Вперёд">→</button>
+    </div>
+  </div>
+  <div class="zm-rail">
+    <article class="zm-bl__post">
+      <div class="zm-bl__top"><span class="zm-bl__ava"></span>Людмила Зюлина</div>
+      <div class="zm-bl__pic"><img class="zm-todo" src="assets/img/blog-1.svg" alt="Урок памяти в библиотеке" loading="lazy"><span class="zm-bl__count">1/4</span></div>
+      <p class="zm-bl__txt">9&nbsp;октября в&nbsp;библиотеке на&nbsp;Плеханова прошёл урок памяти, посвящённый подвигу подольских курсантов. Школьникам рассказали о&nbsp;молодых ребятах немногим старше них, ценой своих жизней задержавших врага на&nbsp;подступах к&nbsp;Москве. После того как войска Красной армии попали в&nbsp;Вяземский котёл, на&nbsp;передовую были брошены курсанты военных училищ.</p>
+      <a class="zm-bl__more" href="blog.html#post-1">Читать полностью</a>
+    </article>
+    <article class="zm-bl__post">
+      <div class="zm-bl__top"><span class="zm-bl__ava"></span>Людмила Зюлина</div>
+      <div class="zm-bl__pic"><img class="zm-todo" src="assets/img/blog-2.svg" alt="Встреча со школьниками ко Дню защитника Отечества" loading="lazy"><span class="zm-bl__count">1/9</span></div>
+      <p class="zm-bl__txt">Сегодня в&nbsp;нашей библиотеке прошла встреча со&nbsp;школьниками, посвящённая Дню защитника Отечества. Ребятам рассказали историю праздника и&nbsp;предложили почувствовать себя новобранцами: они отвечали на&nbsp;вопросы викторины о&nbsp;военной форме, учились наматывать портянки, складывали пилотки из&nbsp;газеты и&nbsp;пришивали пуговицы.</p>
+      <a class="zm-bl__more" href="blog.html#post-2">Читать полностью</a>
+    </article>
+    <article class="zm-bl__post">
+      <div class="zm-bl__top"><span class="zm-bl__ava"></span>Людмила Зюлина</div>
+      <div class="zm-bl__pic"><img class="zm-todo" src="assets/img/blog-3.svg" alt="Программа «Всеволод Гаршин и его сказки»" loading="lazy"><span class="zm-bl__count">2/8</span></div>
+      <p class="zm-bl__txt">14&nbsp;февраля исполнилось 170&nbsp;лет В.&nbsp;М.&nbsp;Гаршину. Мы подготовили литературно-игровую программу «Всеволод Гаршин и&nbsp;его сказки». Ребята вспомнили героев писателя, отправились в&nbsp;путешествие по&nbsp;дорогам сказок, ответили на&nbsp;вопросы викторины, а&nbsp;в&nbsp;завершение сложили из&nbsp;бумаги лягушку-попрыгушку.</p>
+      <a class="zm-bl__more" href="blog.html#post-3">Читать полностью</a>
+    </article>
+  </div>
+</div>
+<script>
+(function(){
+  var s=document.currentScript.closest('section'),r=s.querySelector('.zm-rail');
+  s.querySelectorAll('[data-dir]').forEach(function(b){b.addEventListener('click',function(){
+    var c=r.firstElementChild;r.scrollBy({left:(+b.dataset.dir)*((c?c.offsetWidth:300)+24),behavior:'smooth'});});});
+})();
+</script>
+</section>
+<section class="zm zm-sec zm-cta">
+<style>
+.zm-cta__box{background:var(--zm-ink);color:#fff;border-radius:40px;padding:var(--zm-s6);display:grid;grid-template-columns:1.3fr 1fr;gap:var(--zm-s5);align-items:center;position:relative;overflow:hidden}
+.zm-cta__box .zm-h2{color:#fff}
+.zm-cta__box p{font-size:18px;opacity:.92;margin-top:16px;max-width:44ch}
+.zm-cta__btns{display:grid;gap:12px}
+.zm-cta__btns .zm-btn{justify-content:center}
+.zm-cta__btns .zm-btn--ghost{color:#fff;border-color:#fff}
+.zm-cta__btns .zm-btn--ghost:hover{background:#fff;color:var(--zm-ink)}
+.zm-cta__dot{position:absolute;right:-60px;top:-60px;width:200px;height:200px;border-radius:50%;background:var(--zm-red);opacity:.9}
+@media (max-width:900px){.zm-cta__box{grid-template-columns:1fr;padding:var(--zm-s4) var(--zm-s3);border-radius:28px}}
+</style>
+<div class="zm-wrap zm-z">
+  <div class="zm-cta__box">
+    <span class="zm-cta__dot" aria-hidden="true"></span>
+    <div class="zm-z">
+      <h2 class="zm-h2">Не знаете,<br>с&nbsp;чего начать?</h2>
+      <p>Напишите, для кого занятие и&nbsp;сколько будет человек. Подберу мастер-класс и&nbsp;формат, отвечу на&nbsp;вопросы о&nbsp;материалах.</p>
+    </div>
+    <div class="zm-cta__btns zm-z">
+      <a class="zm-btn zm-btn--accent zm-todo" href="https://t.me/USERNAME">Написать в&nbsp;Telegram</a>
+      <a class="zm-btn zm-btn--ghost zm-todo" href="https://vk.com/USERNAME">Написать во&nbsp;ВКонтакте</a>
+      <a class="zm-btn zm-btn--ghost" href="contacts.html">Все контакты</a>
+    </div>
+  </div>
+</div>
+</section>
+<footer class="zm zm-ft">
+<style>
+.zm-ft{padding:var(--zm-s6) 0 var(--zm-s4);position:relative;overflow:hidden}
+.zm-ft__grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:var(--zm-s5)}
+.zm-ft__logo{width:150px;height:150px}
+.zm-ft__name{font:700 36px/1 var(--zm-font-display);text-transform:uppercase;color:var(--zm-red);margin-top:var(--zm-s3)}
+.zm-ft h3{font:700 18px/1.2 var(--zm-font-text);color:var(--zm-ink);margin-bottom:var(--zm-s3)}
+.zm-ft__menu{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.zm-ft__menu a{text-decoration:none;color:var(--zm-ink)}
+.zm-ft__menu a:hover{color:var(--zm-red)}
+.zm-ft__soc{display:flex;gap:12px}
+.zm-ft__soc a{width:44px;height:44px;border-radius:50%;background:var(--zm-ink);color:#fff;display:grid;place-items:center;text-decoration:none;font:700 13px/1 var(--zm-font-text)}
+.zm-ft__soc a:hover{background:var(--zm-red)}
+.zm-ft__copy{margin-top:var(--zm-s5);padding-top:var(--zm-s3);border-top:1px solid var(--zm-line);font-size:14px;color:var(--zm-muted);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media (max-width:800px){.zm-ft__grid{grid-template-columns:1fr}}
+</style>
+<div class="zm-deco zm-wave" style="right:-30px;bottom:-40px"></div>
+<div class="zm-deco zm-dot" style="left:30%;top:-30px;width:110px;height:110px"></div>
+<div class="zm-wrap zm-z">
+  <div class="zm-ft__grid">
+    <div>
+      <img class="zm-ft__logo" src="assets/decor/logo.svg" width="150" height="150" alt="">
+      <p class="zm-ft__name">Людмила Зюлина</p>
+      <p style="margin-top:12px;color:var(--zm-muted)">Автор мастер-классов для детей и&nbsp;взрослых.<br>Творю на&nbsp;заказ.</p>
+    </div>
+    <nav aria-label="Меню в подвале">
+      <h3>Меню</h3>
+      <ul class="zm-ft__menu">
+        <li><a href="workshops.html">Мастер-классы</a></li>
+        <li><a href="works.html">Работы на&nbsp;заказ</a></li>
+        <li><a href="about.html">Обо мне</a></li>
+        <li><a href="blog.html">Блог</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h3>Контакты</h3>
+      <div class="zm-ft__soc">
+        <a class="zm-todo" href="https://vk.com/USERNAME" aria-label="ВКонтакте">VK</a>
+        <a class="zm-todo" href="https://wa.me/79000000000" aria-label="WhatsApp">WA</a>
+        <a class="zm-todo" href="https://t.me/USERNAME" aria-label="Telegram">TG</a>
+      </div>
+      <p class="zm-todo" style="margin-top:var(--zm-s3)">+7 [телефон]<br>[e-mail]</p>
+    </div>
+  </div>
+  <div class="zm-ft__copy">
+    <span>© Творческая мастерская Людмилы Зюлиной</span>
+    <a class="zm-todo" href="privacy.html">Политика обработки персональных данных</a>
+  </div>
+</div>
+</footer>
+
+</div>
+</body>
+</html>

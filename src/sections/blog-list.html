@@ -1,0 +1,41 @@
+<section class="zm zm-sec zm-bll" style="padding-top:0">
+<!-- В Тильде страницу блога лучше собрать на «Потоках»: посты добавляются из редактора, без правки кода. -->
+<style>
+.zm-bll__list{display:grid;gap:var(--zm-s5);max-width:900px}
+.zm-bll__post{display:grid;grid-template-columns:340px 1fr;gap:var(--zm-s4);background:var(--zm-paper);border-radius:var(--zm-radius);overflow:hidden;scroll-margin-top:24px}
+.zm-bll__post img{width:100%;height:100%;object-fit:cover;min-height:260px;background:#3a3a3a}
+.zm-bll__body{padding:var(--zm-s4) var(--zm-s4) var(--zm-s4) 0;display:grid;gap:12px;align-content:start}
+.zm-bll__body h2{font:700 30px/1.05 var(--zm-font-display);text-transform:uppercase;color:var(--zm-ink)}
+.zm-bll__body p{line-height:1.6}
+@media (max-width:800px){.zm-bll__post{grid-template-columns:1fr}.zm-bll__body{padding:0 var(--zm-s3) var(--zm-s3)}}
+</style>
+<div class="zm-wrap zm-z">
+  <div class="zm-bll__list">
+    <article class="zm-bll__post" id="post-1">
+      <img class="zm-todo" src="{{A}}/img/blog-1.svg" alt="Урок памяти в библиотеке" loading="lazy">
+      <div class="zm-bll__body">
+        <h2>Урок памяти о&nbsp;подольских курсантах</h2>
+        <p>9&nbsp;октября в&nbsp;библиотеке на&nbsp;Плеханова прошёл урок памяти, посвящённый подвигу подольских курсантов. Школьникам рассказали о&nbsp;молодых ребятах немногим старше них, ценой своих жизней задержавших врага на&nbsp;подступах к&nbsp;Москве.</p>
+        <p>После того как войска Красной армии попали в&nbsp;Вяземский котёл, на&nbsp;передовую были брошены курсанты военных училищ. С&nbsp;точки зрения военной логики этого не&nbsp;должно было случиться: курсанты вступили в&nbsp;бой простыми солдатами.</p>
+        <p class="zm-todo">[Окончание поста — взять из исходной публикации]</p>
+      </div>
+    </article>
+    <article class="zm-bll__post" id="post-2">
+      <img class="zm-todo" src="{{A}}/img/blog-2.svg" alt="Встреча со школьниками ко Дню защитника Отечества" loading="lazy">
+      <div class="zm-bll__body">
+        <h2>День защитника Отечества: почувствовать себя новобранцем</h2>
+        <p>Сегодня в&nbsp;нашей библиотеке прошла встреча со&nbsp;школьниками, посвящённая Дню защитника Отечества. Ребятам рассказали историю праздника и&nbsp;предложили почувствовать себя новобранцами.</p>
+        <p>Они ответили на&nbsp;вопросы викторины о&nbsp;военной форме, научились наматывать портянки, сложили пилотки из&nbsp;газеты, почистили (порисовали) сапоги, пришили пуговицы, собрали парашют, получили наряд на&nbsp;кухню и&nbsp;обнаружили вражескую батарею. В&nbsp;заключение посоревновались в&nbsp;армрестлинге.</p>
+      </div>
+    </article>
+    <article class="zm-bll__post" id="post-3">
+      <img class="zm-todo" src="{{A}}/img/blog-3.svg" alt="Программа «Всеволод Гаршин и его сказки»" loading="lazy">
+      <div class="zm-bll__body">
+        <h2>«Всеволод Гаршин и&nbsp;его сказки»</h2>
+        <p>14&nbsp;февраля исполнилось 170&nbsp;лет В.&nbsp;М.&nbsp;Гаршину. Мы подготовили литературно-игровую программу «Всеволод Гаршин и&nbsp;его сказки».</p>
+        <p>Ребята вспомнили героев писателя, совершили путешествие по&nbsp;дорогам сказок, ответили на&nbsp;вопросы викторины, проиграли сказочные приключения, а&nbsp;в&nbsp;завершение с&nbsp;помощью оригами создали лягушку-попрыгушку.</p>
+      </div>
+    </article>
+  </div>
+</div>
+</section>
