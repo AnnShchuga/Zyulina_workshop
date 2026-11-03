@@ -210,7 +210,15 @@
 .zm-fmt__icon{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;font-size:30px}
 .zm-fmt__card ul{margin:0;padding-left:20px;display:grid;gap:6px;color:var(--zm-muted)}
 .zm-fmt__price{margin-top:auto;padding-top:var(--zm-s2);font-weight:700;color:var(--zm-ink)}
+.zm-fmt__kit{margin-top:var(--zm-s3);display:grid;grid-template-columns:auto 1fr auto;gap:var(--zm-s4);align-items:center;background:var(--zm-ink);color:#fff;border-radius:var(--zm-radius);padding:var(--zm-s4)}
+.zm-fmt__kit .zm-h3{color:#fff}
+.zm-fmt__kit p{opacity:.9;margin-top:8px;max-width:60ch}
+.zm-fmt__box{width:96px;height:96px;border-radius:20px;background:var(--zm-red);display:grid;place-items:center;font-size:44px}
+.zm-fmt__soon{display:inline-block;margin-left:8px;padding:3px 10px;border-radius:999px;background:#fff;color:var(--zm-ink);font:700 12px/1.2 var(--zm-font-text);vertical-align:middle}
+.zm-fmt__kit .zm-btn--ghost{color:#fff;border-color:#fff}
+.zm-fmt__kit .zm-btn--ghost:hover{background:#fff;color:var(--zm-ink)}
 @media (max-width:1100px){.zm-fmt__grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:800px){.zm-fmt__kit{grid-template-columns:1fr;gap:var(--zm-s2)}.zm-fmt__box{width:72px;height:72px;font-size:34px}}
 @media (max-width:640px){.zm-fmt__grid{grid-template-columns:1fr}}
 </style>
 <div class="zm-deco zm-star zm-star--l" style="left:3%;top:40px"></div>
@@ -251,6 +259,14 @@
       <a class="zm-btn zm-btn--s" href="workshops.html#pdf">Выбрать инструкцию</a>
     </article>
   </div>
+  <article class="zm-fmt__kit">
+    <div class="zm-fmt__box" aria-hidden="true">🎁</div>
+    <div>
+      <h3 class="zm-h3">Набор «всё в&nbsp;коробке»<span class="zm-fmt__soon">Скоро</span></h3>
+      <p>Печатная инструкция, QR-код на&nbsp;видеоурок и&nbsp;материалы для работы. Открыл, навёл камеру на&nbsp;код и&nbsp;начал. Хороший подарок ребёнку или подруге.</p>
+    </div>
+    <a class="zm-btn zm-btn--ghost zm-btn--s" href="contacts.html?topic=kit">Узнать первой</a>
+  </article>
 </div>
 </section>
 <section class="zm zm-sec zm-mk" id="workshops">
@@ -339,7 +355,7 @@
     <a class="zm-aud__item" style="background:#F3E4C6" href="contacts.html?topic=party">
       <h3>На&nbsp;праздник</h3><p>Мастер-класс на&nbsp;день рождения, девичник или семейную встречу. <span class="zm-todo">Материалы: [уточнить, чьи]</span></p><span class="zm-aud__go">Обсудить праздник →</span></a>
     <a class="zm-aud__item" style="background:#D6EEF3" href="contacts.html?topic=org">
-      <h3>Школам, библиотекам, компаниям</h3><p>Тематические программы к&nbsp;памятным датам, урокам литературы и&nbsp;корпоративным праздникам.</p><span class="zm-aud__go">Запросить программу →</span></a>
+      <h3>Школам, садам, центрам, компаниям</h3><p>Тематические программы к&nbsp;памятным датам, регулярный кружок для детского сада или досугового центра, корпоративные праздники.</p><span class="zm-aud__go">Запросить программу →</span></a>
     <a class="zm-aud__item" style="background:#E4DAF4" href="works.html">
       <h3>В&nbsp;подарок</h3><p>Готовые работы, декор на&nbsp;заказ, а&nbsp;ещё видеоурок или инструкция, которые можно подарить.</p><span class="zm-aud__go">Смотреть работы →</span></a>
   </div>

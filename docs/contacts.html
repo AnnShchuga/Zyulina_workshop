@@ -205,7 +205,7 @@
 (function(){
   var s=document.currentScript.closest('section'),p=s.querySelector('.zm-ct__topic');
   var q=new URLSearchParams(location.search),m={decoupage:'Декупаж деревянных ложек',cardmaking:'Кардмейкинг',dandelion:'Композиция «Одуванчик»',wreath:'Новогодний венок',origami:'Оригами: лягушка-попрыгушка'},
-      t={party:'Мастер-класс на праздник',org:'Программа для организации',order:'Работа на заказ'};
+      t={party:'Мастер-класс на праздник',org:'Программа для организации',order:'Работа на заказ',kit:'Набор «всё в коробке»'};
   var v=m[q.get('mk')]||t[q.get('topic')];
   if(v){p.textContent='Вы выбрали: '+v+'. Укажите это в сообщении, и я сразу пойму, о чём речь.';p.hidden=false;}
 })();
