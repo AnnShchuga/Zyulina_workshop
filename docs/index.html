@@ -52,7 +52,8 @@
 .zm h1,.zm h2,.zm h3,.zm p{margin:0}
 .zm-page{background:var(--zm-bg) url('assets/decor/seigaiha-bg.svg') repeat;background-size:120px 60px}
 .zm-wrap{max-width:var(--zm-max);margin:0 auto;padding:0 var(--zm-s3);position:relative}
-.zm-sec{position:relative;padding:var(--zm-s7) 0;overflow:hidden}
+/* Обрезаем декор только по бокам: по вертикали круги и звёзды могут заходить на соседние секции */
+.zm-sec{position:relative;padding:var(--zm-s7) 0;overflow-x:clip;overflow-y:visible}
 
 /* Заголовки: две строки, сланцевая + коралловая, как в концепте */
 .zm-h1,.zm-h2{font-family:var(--zm-font-display);font-weight:700;text-transform:uppercase;line-height:.92;letter-spacing:.01em}
@@ -519,7 +520,7 @@
 </section>
 <footer class="zm zm-ft">
 <style>
-.zm-ft{padding:var(--zm-s6) 0 var(--zm-s4);position:relative;overflow:hidden}
+.zm-ft{padding:var(--zm-s6) 0 var(--zm-s4);position:relative;overflow-x:clip;overflow-y:visible}
 .zm-ft__grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:var(--zm-s5)}
 .zm-ft__logo{width:150px;height:150px}
 .zm-ft__name{font:700 36px/1 var(--zm-font-display);text-transform:uppercase;color:var(--zm-red);margin-top:var(--zm-s3)}

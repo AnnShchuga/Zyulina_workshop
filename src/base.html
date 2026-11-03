@@ -41,7 +41,8 @@
 .zm h1,.zm h2,.zm h3,.zm p{margin:0}
 .zm-page{background:var(--zm-bg) url('{{A}}/decor/seigaiha-bg.svg') repeat;background-size:120px 60px}
 .zm-wrap{max-width:var(--zm-max);margin:0 auto;padding:0 var(--zm-s3);position:relative}
-.zm-sec{position:relative;padding:var(--zm-s7) 0;overflow:hidden}
+/* Обрезаем декор только по бокам: по вертикали круги и звёзды могут заходить на соседние секции */
+.zm-sec{position:relative;padding:var(--zm-s7) 0;overflow-x:clip;overflow-y:visible}
 
 /* Заголовки: две строки, сланцевая + коралловая, как в концепте */
 .zm-h1,.zm-h2{font-family:var(--zm-font-display);font-weight:700;text-transform:uppercase;line-height:.92;letter-spacing:.01em}
