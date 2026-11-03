@@ -1,6 +1,6 @@
 <section class="zm zm-sec zm-ct" style="padding-top:0">
 <style>
-.zm-ct__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--zm-s3)}
+.zm-ct__grid{display:grid;grid-template-columns:repeat(2,1fr);max-width:860px;gap:var(--zm-s3)}
 .zm-ct__card{background:var(--zm-paper);border-radius:var(--zm-radius);padding:var(--zm-s4);display:flex;flex-direction:column;gap:12px;text-decoration:none;color:var(--zm-text);border:2px solid transparent;transition:border-color .2s}
 .zm-ct__card:hover{border-color:var(--zm-ink)}
 .zm-ct__card b{font:700 30px/1 var(--zm-font-display);text-transform:uppercase;color:var(--zm-ink)}
@@ -11,9 +11,8 @@
 </style>
 <div class="zm-wrap zm-z">
   <div class="zm-ct__grid">
-    <a class="zm-ct__card zm-todo" href="https://t.me/USERNAME"><b>Telegram</b><span>Быстрее всего отвечаю здесь</span><span>@USERNAME</span></a>
-    <a class="zm-ct__card zm-todo" href="https://wa.me/79000000000"><b>WhatsApp</b><span>Сообщение или звонок</span><span>+7 [номер]</span></a>
-    <a class="zm-ct__card zm-todo" href="https://vk.com/USERNAME"><b>ВКонтакте</b><span>Новые работы и&nbsp;анонсы</span><span>vk.com/USERNAME</span></a>
+    <a class="zm-ct__card" href="https://vk.com/id598297974"><b>ВКонтакте</b><span>Сообщения, новые работы и&nbsp;анонсы</span><span>vk.com/id598297974</span></a>
+    <a class="zm-ct__card" href="mailto:zyulil@mail.ru"><b>Почта</b><span>Для заказов и&nbsp;программ для организаций</span><span>zyulil@mail.ru</span></a>
   </div>
   <p class="zm-ct__topic" hidden></p>
   <!-- В Тильде сюда ставится СТАНДАРТНЫЙ блок формы (BF-серия), а не код: так заявки приходят на почту/в Telegram и в «Заявки» Тильды. -->
@@ -22,7 +21,7 @@
 <script>
 (function(){
   var s=document.currentScript.closest('section'),p=s.querySelector('.zm-ct__topic');
-  var q=new URLSearchParams(location.search),m={decoupage:'Декупаж деревянных ложек',cardmaking:'Кардмейкинг',dandelion:'Композиция «Одуванчик»',wreath:'Новогодний венок',origami:'Оригами: лягушка-попрыгушка'},
+  var q=new URLSearchParams(location.search),m={decoupage:'Декупаж деревянных ложек',cardmaking:'Кардмейкинг',dandelion:'Композиция «Одуванчик»',turtle:'Панно «Черепаха»',wreath:'Новогодний венок',origami:'Оригами: лягушка-попрыгушка'},
       t={party:'Мастер-класс на праздник',org:'Программа для организации',order:'Работа на заказ',kit:'Набор «всё в коробке»'};
   var v=m[q.get('mk')]||t[q.get('topic')];
   if(v){p.textContent='Вы выбрали: '+v+'. Укажите это в сообщении, и я сразу пойму, о чём речь.';p.hidden=false;}

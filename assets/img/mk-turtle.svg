@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+<rect width="800" height="500" fill="#C9B6E8"/>
+<circle cx="656" cy="110" r="70" fill="#FFFFFF" opacity=".25"/>
+<path d="M120 425 L304 250 L440 350 L560 280 L704 425Z" fill="#FFFFFF" opacity=".28"/>
+<text x="50%" y="46%" text-anchor="middle" font-family="PT Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#435A67">ЗАГЛУШКА</text>
+<text x="50%" y="56%" text-anchor="middle" font-family="PT Sans, Arial, sans-serif" font-size="20" fill="#435A67">Панно «Черепаха»: обложка</text>
+</svg>

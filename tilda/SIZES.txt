@@ -4,47 +4,47 @@
    5703 B  OK   index/03-formats.html
    5639 B  OK   index/04-workshops-rail.html
    2557 B  OK   index/05-audience.html
-   3819 B  OK   index/06-gallery.html
+   3846 B  OK   index/06-gallery.html
    2193 B  OK   index/07-about-short.html
    2357 B  OK   index/08-reviews.html
    5720 B  OK   index/09-blog-rail.html
-   1696 B  OK   index/10-cta.html
-   2944 B  OK   index/11-footer.html
+   1687 B  OK   index/10-cta.html
+   2881 B  OK   index/11-footer.html
    8806 B  OK   workshops/00-base.html
    3097 B  OK   workshops/01-header.html
     871 B  OK   workshops/02-pagehead.html
-   8087 B  OK   workshops/03-catalog.html
+   9136 B  OK   workshops/03-catalog.html
    2167 B  OK   workshops/04-faq.html
-   1696 B  OK   workshops/05-cta.html
-   2944 B  OK   workshops/06-footer.html
+   1687 B  OK   workshops/05-cta.html
+   2881 B  OK   workshops/06-footer.html
    8806 B  OK   works/00-base.html
    3097 B  OK   works/01-header.html
     807 B  OK   works/02-pagehead.html
-   6126 B  OK   works/03-works-grid.html
+   7234 B  OK   works/03-works-grid.html
    1753 B  OK   works/04-order-steps.html
-   1696 B  OK   works/05-cta.html
-   2944 B  OK   works/06-footer.html
+   1687 B  OK   works/05-cta.html
+   2881 B  OK   works/06-footer.html
    8806 B  OK   about/00-base.html
    3097 B  OK   about/01-header.html
     736 B  OK   about/02-pagehead.html
    3147 B  OK   about/03-about-full.html
    2357 B  OK   about/04-reviews.html
-   1696 B  OK   about/05-cta.html
-   2944 B  OK   about/06-footer.html
+   1687 B  OK   about/05-cta.html
+   2881 B  OK   about/06-footer.html
    8806 B  OK   blog/00-base.html
    3097 B  OK   blog/01-header.html
     737 B  OK   blog/02-pagehead.html
    4837 B  OK   blog/03-blog-list.html
-   1696 B  OK   blog/04-cta.html
-   2944 B  OK   blog/05-footer.html
+   1687 B  OK   blog/04-cta.html
+   2881 B  OK   blog/05-footer.html
    8806 B  OK   contacts/00-base.html
    3097 B  OK   contacts/01-header.html
     839 B  OK   contacts/02-pagehead.html
-   2856 B  OK   contacts/03-contacts.html
+   2788 B  OK   contacts/03-contacts.html
    2167 B  OK   contacts/04-faq.html
-   2944 B  OK   contacts/05-footer.html
+   2881 B  OK   contacts/05-footer.html
    8806 B  OK   privacy/00-base.html
    3097 B  OK   privacy/01-header.html
     671 B  OK   privacy/02-pagehead.html
     713 B  OK   privacy/03-privacy.html
-   2944 B  OK   privacy/04-footer.html
+   2881 B  OK   privacy/04-footer.html
