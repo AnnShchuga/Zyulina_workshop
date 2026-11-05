@@ -121,7 +121,7 @@
 .zm-hd{position:relative;z-index:20;padding:20px 0}
 .zm-hd .zm-wrap{display:flex;align-items:center;justify-content:space-between;gap:24px}
 .zm-hd__logo{display:block;width:104px;height:104px;flex:none}
-.zm-hd__nav{display:flex;align-items:center;gap:36px}
+.zm-hd__nav{display:flex;align-items:center;gap:32px}
 .zm-hd__nav a{text-decoration:none;font-weight:700;font-size:16px;color:var(--zm-ink);padding:8px 0;border-bottom:2px solid transparent}
 .zm-hd__nav a:hover,.zm-hd__nav a[aria-current]{border-color:var(--zm-red)}
 .zm-hd__nav .zm-btn{color:#fff;border-bottom-width:2px;padding:10px 22px}
@@ -129,7 +129,7 @@
 .zm-hd__burger{display:none;width:48px;height:48px;border-radius:50%;border:2px solid var(--zm-ink);background:var(--zm-paper);cursor:pointer;position:relative}
 .zm-hd__burger span,.zm-hd__burger span::before,.zm-hd__burger span::after{position:absolute;left:12px;width:20px;height:2px;background:var(--zm-ink);content:'';transition:transform .2s}
 .zm-hd__burger span{top:22px}.zm-hd__burger span::before{left:0;top:-6px}.zm-hd__burger span::after{left:0;top:6px}
-@media (max-width:900px){
+@media (max-width:1040px){
   .zm-hd__logo{width:76px;height:76px}
   .zm-hd__burger{display:block}
   .zm-hd__nav{position:absolute;top:100%;left:16px;right:16px;flex-direction:column;align-items:stretch;gap:0;
@@ -145,6 +145,7 @@
   </a>
   <button class="zm-hd__burger" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
   <nav class="zm-hd__nav" aria-label="Основное меню">
+    <a href="index.html" data-page="index">Главная</a>
     <a href="workshops.html" data-page="workshops">Мастер-классы</a>
     <a href="works.html" data-page="works">Работы на заказ</a>
     <a href="about.html" data-page="about">Обо мне</a>
@@ -348,6 +349,7 @@
     <nav aria-label="Меню в подвале">
       <h3>Меню</h3>
       <ul class="zm-ft__menu">
+        <li><a href="index.html">Главная</a></li>
         <li><a href="workshops.html">Мастер-классы</a></li>
         <li><a href="works.html">Работы на&nbsp;заказ</a></li>
         <li><a href="about.html">Обо мне</a></li>

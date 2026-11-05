@@ -121,7 +121,7 @@
 .zm-hd{position:relative;z-index:20;padding:20px 0}
 .zm-hd .zm-wrap{display:flex;align-items:center;justify-content:space-between;gap:24px}
 .zm-hd__logo{display:block;width:104px;height:104px;flex:none}
-.zm-hd__nav{display:flex;align-items:center;gap:36px}
+.zm-hd__nav{display:flex;align-items:center;gap:32px}
 .zm-hd__nav a{text-decoration:none;font-weight:700;font-size:16px;color:var(--zm-ink);padding:8px 0;border-bottom:2px solid transparent}
 .zm-hd__nav a:hover,.zm-hd__nav a[aria-current]{border-color:var(--zm-red)}
 .zm-hd__nav .zm-btn{color:#fff;border-bottom-width:2px;padding:10px 22px}
@@ -129,7 +129,7 @@
 .zm-hd__burger{display:none;width:48px;height:48px;border-radius:50%;border:2px solid var(--zm-ink);background:var(--zm-paper);cursor:pointer;position:relative}
 .zm-hd__burger span,.zm-hd__burger span::before,.zm-hd__burger span::after{position:absolute;left:12px;width:20px;height:2px;background:var(--zm-ink);content:'';transition:transform .2s}
 .zm-hd__burger span{top:22px}.zm-hd__burger span::before{left:0;top:-6px}.zm-hd__burger span::after{left:0;top:6px}
-@media (max-width:900px){
+@media (max-width:1040px){
   .zm-hd__logo{width:76px;height:76px}
   .zm-hd__burger{display:block}
   .zm-hd__nav{position:absolute;top:100%;left:16px;right:16px;flex-direction:column;align-items:stretch;gap:0;
@@ -145,6 +145,7 @@
   </a>
   <button class="zm-hd__burger" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
   <nav class="zm-hd__nav" aria-label="Основное меню">
+    <a href="index.html" data-page="index">Главная</a>
     <a href="workshops.html" data-page="workshops">Мастер-классы</a>
     <a href="works.html" data-page="works">Работы на заказ</a>
     <a href="about.html" data-page="about">Обо мне</a>
@@ -179,6 +180,251 @@
   <h1 class="zm-h1" style="font-size:clamp(48px,7vw,96px)">Блог<br><span class="zm-red">мастерской</span></h1>
   <p class="zm-lead">Одним глазком тут можно подглядеть за волшебством.</p>
 </div>
+</section>
+<section class="zm zm-sec zm-vk" id="vk-mk">
+<!-- Посты из ВКонтакте. Список — в src/vk-posts.json, разметку карточек подставляет build.py вместо     <article class="zm-vk__item" data-owner="598297974" data-post="233" data-hash="">
+      <div class="zm-vk__embed" id="vk_post_598297974_233"></div>
+      <div class="zm-vk__card">
+        <span class="zm-tag zm-vk__kind">Клуб</span>
+        <h3>Учебный год в клубе «Город мастеров»</h3>
+        <p>Закончился учебный год в клубе «Город мастеров». За год ребята многое сделали и многому научились. Последнее занятие посвятили Пушкину: «В тридевятом царстве, Пушкинском государстве».</p>
+        <a class="zm-vk__link" href="https://vk.com/wall598297974_233" target="_blank" rel="noopener">Смотреть фото во&nbsp;ВКонтакте</a>
+      </div>
+    </article>
+    <article class="zm-vk__item" data-owner="598297974" data-post="226" data-hash="">
+      <div class="zm-vk__embed" id="vk_post_598297974_226"></div>
+      <div class="zm-vk__card">
+        <span class="zm-tag zm-vk__kind">Мастер-класс</span>
+        <h3>«Пасхи дивной красота» и «Пасхальный венок»</h3>
+        <p>В библиотеке на Плеханова прошли два мастер-класса к Пасхе. На одном мастерили открытку с цыплёнком, на другом — венок.</p>
+        <a class="zm-vk__link" href="https://vk.com/wall598297974_226" target="_blank" rel="noopener">Смотреть фото во&nbsp;ВКонтакте</a>
+      </div>
+    </article>
+    <article class="zm-vk__item" data-owner="598297974" data-post="210" data-hash="">
+      <div class="zm-vk__embed" id="vk_post_598297974_210"></div>
+      <div class="zm-vk__card">
+        <span class="zm-tag zm-vk__kind">Мастер-класс</span>
+        <h3>Новогодний венок</h3>
+        <p>Готовимся к Новому году: 21 декабря учились делать венок, а 27 декабря — Рождественский вертеп.</p>
+        <a class="zm-vk__link" href="https://vk.com/wall598297974_210" target="_blank" rel="noopener">Смотреть фото во&nbsp;ВКонтакте</a>
+      </div>
+    </article>
+    <article class="zm-vk__item" data-owner="598297974" data-post="207" data-hash="">
+      <div class="zm-vk__embed" id="vk_post_598297974_207"></div>
+      <div class="zm-vk__card">
+        <span class="zm-tag zm-vk__kind">Мастер-класс</span>
+        <h3>«Новогодние фантазии»: подсвечник</h3>
+        <p>Для молодёжи прошёл мастер-класс «Новогодние фантазии»: делали новогодний подсвечник.</p>
+        <a class="zm-vk__link" href="https://vk.com/wall598297974_207" target="_blank" rel="noopener">Смотреть фото во&nbsp;ВКонтакте</a>
+      </div>
+    </article>
+    <article class="zm-vk__item" data-owner="598297974" data-post="166" data-hash="">
+      <div class="zm-vk__embed" id="vk_post_598297974_166"></div>
+      <div class="zm-vk__card">
+        <span class="zm-tag zm-vk__kind">Мастер-класс</span>
+        <h3>Синичкин день</h3>
+        <p>12 ноября — Синичкин день. Участники мастерской познакомились с синицами, разгадали загадки и смастерили сувенир.</p>
+        <a class="zm-vk__link" href="https://vk.com/wall598297974_166" target="_blank" rel="noopener">Смотреть фото во&nbsp;ВКонтакте</a>
+      </div>
+    </article>
+    <article class="zm-vk__item" data-owner="598297974" data-post="96" data-hash="">
+      <div class="zm-vk__embed" id="vk_post_598297974_96"></div>
+      <div class="zm-vk__card">
+        <span class="zm-tag zm-vk__kind">Мастер-класс</span>
+        <h3>Открытка ко Дню Победы</h3>
+        <p>Мастер-класс «В сердцах и книгах память о войне»: ребята познакомились с книгами о войне, рассказали о своих прадедах и сделали открытку защитникам.</p>
+        <a class="zm-vk__link" href="https://vk.com/wall598297974_96" target="_blank" rel="noopener">Смотреть фото во&nbsp;ВКонтакте</a>
+      </div>
+    </article>
+    <article class="zm-vk__item" data-owner="598297974" data-post="89" data-hash="">
+      <div class="zm-vk__embed" id="vk_post_598297974_89"></div>
+      <div class="zm-vk__card">
+        <span class="zm-tag zm-vk__kind">Мастер-класс</span>
+        <h3>Пасхальная корзинка</h3>
+        <p>Ребята узнали, почему символом Пасхи стал кролик, познакомились с традициями и сделали корзинку для подарка.</p>
+        <a class="zm-vk__link" href="https://vk.com/wall598297974_89" target="_blank" rel="noopener">Смотреть фото во&nbsp;ВКонтакте</a>
+      </div>
+    </article>
+    <article class="zm-vk__item" data-owner="598297974" data-post="86" data-hash="">
+      <div class="zm-vk__embed" id="vk_post_598297974_86"></div>
+      <div class="zm-vk__card">
+        <span class="zm-tag zm-vk__kind">Студия</span>
+        <h3>Птички к Международному дню птиц</h3>
+        <p>1 апреля — Международный день птиц. Мои студийцы делали птичек. Больше всего им понравилось отгибать крылышки.</p>
+        <a class="zm-vk__link" href="https://vk.com/wall598297974_86" target="_blank" rel="noopener">Смотреть фото во&nbsp;ВКонтакте</a>
+      </div>
+    </article>
+    <article class="zm-vk__item" data-owner="598297974" data-post="56" data-hash="">
+      <div class="zm-vk__embed" id="vk_post_598297974_56"></div>
+      <div class="zm-vk__card">
+        <span class="zm-tag zm-vk__kind">Мастер-класс</span>
+        <h3>Письмо-треугольник</h3>
+        <p>Творческое занятие «Склоняя голову пред подвигом солдата»: ребята вспомнили главные вехи войны и сделали письмо-треугольник со словами благодарности победителям.</p>
+        <a class="zm-vk__link" href="https://vk.com/wall598297974_56" target="_blank" rel="noopener">Смотреть фото во&nbsp;ВКонтакте</a>
+      </div>
+    </article>
+    <article class="zm-vk__item" data-owner="598297974" data-post="49" data-hash="">
+      <div class="zm-vk__embed" id="vk_post_598297974_49"></div>
+      <div class="zm-vk__card">
+        <span class="zm-tag zm-vk__kind">Мастер-класс</span>
+        <h3>Игрушка-дергунчик «Буратино»</h3>
+        <p>Мастер-класс «Деревянный мальчишка из старой книжки»: делали игрушку-дергунчика. Картинку с Буратино наклеили на картон, отделили руки и ноги — и собрали механическую игрушку.</p>
+        <a class="zm-vk__link" href="https://vk.com/wall598297974_49" target="_blank" rel="noopener">Смотреть фото во&nbsp;ВКонтакте</a>
+      </div>
+    </article>
+    <article class="zm-vk__item" data-owner="598297974" data-post="48" data-hash="">
+      <div class="zm-vk__embed" id="vk_post_598297974_48"></div>
+      <div class="zm-vk__card">
+        <span class="zm-tag zm-vk__kind">Мастер-класс</span>
+        <h3>Книжка-оригами</h3>
+        <p>Мастер-класс «Откройте, книга!»: собирали книжку-оригами, вклеивали стихотворение Т. Сперанской о книге, делали картонную обложку и переплёт из ткани.</p>
+        <a class="zm-vk__link" href="https://vk.com/wall598297974_48" target="_blank" rel="noopener">Смотреть фото во&nbsp;ВКонтакте</a>
+      </div>
+    </article>.
+     У поста с hash поверх карточки встаёт официальный виджет ВК «Запись на стене» (фото, лайки, комментарии).
+     Без hash или если скрипт ВК не загрузился — остаётся карточка со ссылкой на пост. -->
+<style>
+.zm-vk__head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:var(--zm-s5)}
+.zm-vk__head p{max-width:46ch;color:var(--zm-muted)}
+.zm-vk__grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:var(--zm-s3);align-items:start}
+.zm-vk__item{background:var(--zm-paper);border-radius:var(--zm-radius);overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.zm-vk__card{padding:var(--zm-s3);display:flex;flex-direction:column;gap:12px}
+.zm-vk__card h3{font:700 26px/1.05 var(--zm-font-display);text-transform:uppercase;color:var(--zm-ink)}
+.zm-vk__card p{font-size:15px;line-height:1.55}
+.zm-vk__kind{align-self:flex-start;background:#2E7F93}
+.zm-vk__link{display:inline-flex;align-items:center;gap:8px;font-weight:700;color:var(--zm-ink);text-decoration:none;margin-top:4px}
+.zm-vk__link:hover{color:var(--zm-red)}
+.zm-vk__link::before{content:'VK';display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--zm-ink);color:#fff;font:700 10px/1 var(--zm-font-text)}
+.zm-vk__embed:empty{display:none}
+.zm-vk__item.is-embedded .zm-vk__card{display:none}
+</style>
+<div class="zm-deco zm-star" style="right:6%;top:50px"></div>
+<div class="zm-wrap zm-z">
+  <div class="zm-vk__head">
+    <h2 class="zm-h2">Мастер-классы<br><span class="zm-red">из ВКонтакте</span></h2>
+    <p>Как проходят занятия: открытки, венки, игрушки, книжки-оригами. Фото каждого занятия — по ссылке на пост.</p>
+  </div>
+  <div class="zm-vk__grid">
+    <article class="zm-vk__item" data-owner="598297974" data-post="233" data-hash="">
+      <div class="zm-vk__embed" id="vk_post_598297974_233"></div>
+      <div class="zm-vk__card">
+        <span class="zm-tag zm-vk__kind">Клуб</span>
+        <h3>Учебный год в клубе «Город мастеров»</h3>
+        <p>Закончился учебный год в клубе «Город мастеров». За год ребята многое сделали и многому научились. Последнее занятие посвятили Пушкину: «В тридевятом царстве, Пушкинском государстве».</p>
+        <a class="zm-vk__link" href="https://vk.com/wall598297974_233" target="_blank" rel="noopener">Смотреть фото во&nbsp;ВКонтакте</a>
+      </div>
+    </article>
+    <article class="zm-vk__item" data-owner="598297974" data-post="226" data-hash="">
+      <div class="zm-vk__embed" id="vk_post_598297974_226"></div>
+      <div class="zm-vk__card">
+        <span class="zm-tag zm-vk__kind">Мастер-класс</span>
+        <h3>«Пасхи дивной красота» и «Пасхальный венок»</h3>
+        <p>В библиотеке на Плеханова прошли два мастер-класса к Пасхе. На одном мастерили открытку с цыплёнком, на другом — венок.</p>
+        <a class="zm-vk__link" href="https://vk.com/wall598297974_226" target="_blank" rel="noopener">Смотреть фото во&nbsp;ВКонтакте</a>
+      </div>
+    </article>
+    <article class="zm-vk__item" data-owner="598297974" data-post="210" data-hash="">
+      <div class="zm-vk__embed" id="vk_post_598297974_210"></div>
+      <div class="zm-vk__card">
+        <span class="zm-tag zm-vk__kind">Мастер-класс</span>
+        <h3>Новогодний венок</h3>
+        <p>Готовимся к Новому году: 21 декабря учились делать венок, а 27 декабря — Рождественский вертеп.</p>
+        <a class="zm-vk__link" href="https://vk.com/wall598297974_210" target="_blank" rel="noopener">Смотреть фото во&nbsp;ВКонтакте</a>
+      </div>
+    </article>
+    <article class="zm-vk__item" data-owner="598297974" data-post="207" data-hash="">
+      <div class="zm-vk__embed" id="vk_post_598297974_207"></div>
+      <div class="zm-vk__card">
+        <span class="zm-tag zm-vk__kind">Мастер-класс</span>
+        <h3>«Новогодние фантазии»: подсвечник</h3>
+        <p>Для молодёжи прошёл мастер-класс «Новогодние фантазии»: делали новогодний подсвечник.</p>
+        <a class="zm-vk__link" href="https://vk.com/wall598297974_207" target="_blank" rel="noopener">Смотреть фото во&nbsp;ВКонтакте</a>
+      </div>
+    </article>
+    <article class="zm-vk__item" data-owner="598297974" data-post="166" data-hash="">
+      <div class="zm-vk__embed" id="vk_post_598297974_166"></div>
+      <div class="zm-vk__card">
+        <span class="zm-tag zm-vk__kind">Мастер-класс</span>
+        <h3>Синичкин день</h3>
+        <p>12 ноября — Синичкин день. Участники мастерской познакомились с синицами, разгадали загадки и смастерили сувенир.</p>
+        <a class="zm-vk__link" href="https://vk.com/wall598297974_166" target="_blank" rel="noopener">Смотреть фото во&nbsp;ВКонтакте</a>
+      </div>
+    </article>
+    <article class="zm-vk__item" data-owner="598297974" data-post="96" data-hash="">
+      <div class="zm-vk__embed" id="vk_post_598297974_96"></div>
+      <div class="zm-vk__card">
+        <span class="zm-tag zm-vk__kind">Мастер-класс</span>
+        <h3>Открытка ко Дню Победы</h3>
+        <p>Мастер-класс «В сердцах и книгах память о войне»: ребята познакомились с книгами о войне, рассказали о своих прадедах и сделали открытку защитникам.</p>
+        <a class="zm-vk__link" href="https://vk.com/wall598297974_96" target="_blank" rel="noopener">Смотреть фото во&nbsp;ВКонтакте</a>
+      </div>
+    </article>
+    <article class="zm-vk__item" data-owner="598297974" data-post="89" data-hash="">
+      <div class="zm-vk__embed" id="vk_post_598297974_89"></div>
+      <div class="zm-vk__card">
+        <span class="zm-tag zm-vk__kind">Мастер-класс</span>
+        <h3>Пасхальная корзинка</h3>
+        <p>Ребята узнали, почему символом Пасхи стал кролик, познакомились с традициями и сделали корзинку для подарка.</p>
+        <a class="zm-vk__link" href="https://vk.com/wall598297974_89" target="_blank" rel="noopener">Смотреть фото во&nbsp;ВКонтакте</a>
+      </div>
+    </article>
+    <article class="zm-vk__item" data-owner="598297974" data-post="86" data-hash="">
+      <div class="zm-vk__embed" id="vk_post_598297974_86"></div>
+      <div class="zm-vk__card">
+        <span class="zm-tag zm-vk__kind">Студия</span>
+        <h3>Птички к Международному дню птиц</h3>
+        <p>1 апреля — Международный день птиц. Мои студийцы делали птичек. Больше всего им понравилось отгибать крылышки.</p>
+        <a class="zm-vk__link" href="https://vk.com/wall598297974_86" target="_blank" rel="noopener">Смотреть фото во&nbsp;ВКонтакте</a>
+      </div>
+    </article>
+    <article class="zm-vk__item" data-owner="598297974" data-post="56" data-hash="">
+      <div class="zm-vk__embed" id="vk_post_598297974_56"></div>
+      <div class="zm-vk__card">
+        <span class="zm-tag zm-vk__kind">Мастер-класс</span>
+        <h3>Письмо-треугольник</h3>
+        <p>Творческое занятие «Склоняя голову пред подвигом солдата»: ребята вспомнили главные вехи войны и сделали письмо-треугольник со словами благодарности победителям.</p>
+        <a class="zm-vk__link" href="https://vk.com/wall598297974_56" target="_blank" rel="noopener">Смотреть фото во&nbsp;ВКонтакте</a>
+      </div>
+    </article>
+    <article class="zm-vk__item" data-owner="598297974" data-post="49" data-hash="">
+      <div class="zm-vk__embed" id="vk_post_598297974_49"></div>
+      <div class="zm-vk__card">
+        <span class="zm-tag zm-vk__kind">Мастер-класс</span>
+        <h3>Игрушка-дергунчик «Буратино»</h3>
+        <p>Мастер-класс «Деревянный мальчишка из старой книжки»: делали игрушку-дергунчика. Картинку с Буратино наклеили на картон, отделили руки и ноги — и собрали механическую игрушку.</p>
+        <a class="zm-vk__link" href="https://vk.com/wall598297974_49" target="_blank" rel="noopener">Смотреть фото во&nbsp;ВКонтакте</a>
+      </div>
+    </article>
+    <article class="zm-vk__item" data-owner="598297974" data-post="48" data-hash="">
+      <div class="zm-vk__embed" id="vk_post_598297974_48"></div>
+      <div class="zm-vk__card">
+        <span class="zm-tag zm-vk__kind">Мастер-класс</span>
+        <h3>Книжка-оригами</h3>
+        <p>Мастер-класс «Откройте, книга!»: собирали книжку-оригами, вклеивали стихотворение Т. Сперанской о книге, делали картонную обложку и переплёт из ткани.</p>
+        <a class="zm-vk__link" href="https://vk.com/wall598297974_48" target="_blank" rel="noopener">Смотреть фото во&nbsp;ВКонтакте</a>
+      </div>
+    </article>
+  </div>
+</div>
+<script>
+(function(){
+  var s=document.currentScript.closest('section');
+  var items=[].slice.call(s.querySelectorAll('.zm-vk__item[data-hash]')).filter(function(i){return i.getAttribute('data-hash')});
+  if(!items.length)return;
+  function embed(){
+    items.forEach(function(i){
+      try{
+        VK.Widgets.Post(i.querySelector('.zm-vk__embed').id,+i.getAttribute('data-owner'),+i.getAttribute('data-post'),i.getAttribute('data-hash'),{width:'auto'});
+        i.classList.add('is-embedded');
+      }catch(e){}
+    });
+  }
+  if(window.VK&&VK.Widgets){embed();return;}
+  if(!window.__zmVK){window.__zmVK=[];var js=document.createElement('script');js.src='https://vk.com/js/api/openapi.js?169';js.async=true;
+    js.onload=function(){window.__zmVK.forEach(function(f){f()});window.__zmVK.push=function(f){f()};};document.head.appendChild(js);}
+  window.__zmVK.push(embed);
+})();
+</script>
 </section>
 <section class="zm zm-sec zm-vk" id="vk">
 <!-- Посты из ВКонтакте. Список — в src/vk-posts.json, разметку карточек подставляет build.py вместо     <article class="zm-vk__item" data-owner="598297974" data-post="306" data-hash="">
@@ -255,8 +501,8 @@
 <div class="zm-deco zm-star" style="right:6%;top:50px"></div>
 <div class="zm-wrap zm-z">
   <div class="zm-vk__head">
-    <h2 class="zm-h2">Из&nbsp;моего<br><span class="zm-red">ВКонтакте</span></h2>
-    <p>Выставки кукол и&nbsp;вышивки, праздничный декор, всё, что вдохновляет на&nbsp;новые мастер-классы.</p>
+    <h2 class="zm-h2">Что меня<br><span class="zm-red">вдохновляет</span></h2>
+    <p>Выставки кукол и вышивки, праздничный декор, всё, что подсказывает идеи для новых мастер-классов.</p>
   </div>
   <div class="zm-vk__grid">
     <article class="zm-vk__item" data-owner="598297974" data-post="306" data-hash="">
@@ -329,8 +575,9 @@
     });
   }
   if(window.VK&&VK.Widgets){embed();return;}
-  var js=document.createElement('script');js.src='https://vk.com/js/api/openapi.js?169';js.async=true;js.onload=embed;
-  document.head.appendChild(js);
+  if(!window.__zmVK){window.__zmVK=[];var js=document.createElement('script');js.src='https://vk.com/js/api/openapi.js?169';js.async=true;
+    js.onload=function(){window.__zmVK.forEach(function(f){f()});window.__zmVK.push=function(f){f()};};document.head.appendChild(js);}
+  window.__zmVK.push(embed);
 })();
 </script>
 </section>
@@ -430,6 +677,7 @@
     <nav aria-label="Меню в подвале">
       <h3>Меню</h3>
       <ul class="zm-ft__menu">
+        <li><a href="index.html">Главная</a></li>
         <li><a href="workshops.html">Мастер-классы</a></li>
         <li><a href="works.html">Работы на&nbsp;заказ</a></li>
         <li><a href="about.html">Обо мне</a></li>

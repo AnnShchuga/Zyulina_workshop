@@ -1,4 +1,4 @@
-<section class="zm zm-sec zm-vk" id="vk">
+<section class="zm zm-sec zm-vk" id="{{SID}}">
 <!-- Посты из ВКонтакте. Список — в src/vk-posts.json, разметку карточек подставляет build.py вместо {{VKPOSTS}}.
      У поста с hash поверх карточки встаёт официальный виджет ВК «Запись на стене» (фото, лайки, комментарии).
      Без hash или если скрипт ВК не загрузился — остаётся карточка со ссылкой на пост. -->
@@ -20,8 +20,8 @@
 <div class="zm-deco zm-star" style="right:6%;top:50px"></div>
 <div class="zm-wrap zm-z">
   <div class="zm-vk__head">
-    <h2 class="zm-h2">Из&nbsp;моего<br><span class="zm-red">ВКонтакте</span></h2>
-    <p>Выставки кукол и&nbsp;вышивки, праздничный декор, всё, что вдохновляет на&nbsp;новые мастер-классы.</p>
+    <h2 class="zm-h2">{{H1}}<br><span class="zm-red">{{H2}}</span></h2>
+    <p>{{INTRO}}</p>
   </div>
   <div class="zm-vk__grid">
 {{VKPOSTS}}
@@ -41,8 +41,9 @@
     });
   }
   if(window.VK&&VK.Widgets){embed();return;}
-  var js=document.createElement('script');js.src='https://vk.com/js/api/openapi.js?169';js.async=true;js.onload=embed;
-  document.head.appendChild(js);
+  if(!window.__zmVK){window.__zmVK=[];var js=document.createElement('script');js.src='https://vk.com/js/api/openapi.js?169';js.async=true;
+    js.onload=function(){window.__zmVK.forEach(function(f){f()});window.__zmVK.push=function(f){f()};};document.head.appendChild(js);}
+  window.__zmVK.push(embed);
 })();
 </script>
 </section>

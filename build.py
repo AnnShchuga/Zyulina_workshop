@@ -46,13 +46,15 @@ def base_for(mode):
     return render(css, mode)
 
 
-def vk_cards():
+def vk_cards(group=None):
     """Карточки постов ВКонтакте из src/vk-posts.json (только show=true)."""
     from html import escape
     data = json.loads((SRC / "vk-posts.json").read_text(encoding="utf-8"))
     out = []
     for p in data["posts"]:
         if not p.get("show"):
+            continue
+        if group and p.get("group", "inspo" if p.get("kind") in ("Выставка", "Декор") else "mk") != group:
             continue
         owner, pid = int(p["owner"]), int(p["id"])
         url = f"https://vk.com/wall{owner}_{pid}"
@@ -95,7 +97,7 @@ def build():
         for i, (sec, params) in enumerate(sections(page), start=1):
             raw = (SRC / "sections" / f"{sec}.html").read_text(encoding="utf-8")
             if "{{VKPOSTS}}" in raw:
-                cards = vk_cards()
+                cards = vk_cards((params or {}).get("GROUP"))
                 if not cards:
                     continue  # нечего показывать — секцию не выводим
                 raw = raw.replace("{{VKPOSTS}}", cards)
