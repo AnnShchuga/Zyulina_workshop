@@ -70,6 +70,15 @@ for n, pr in parsed.items():
             broken.append(f"{n}: картинка {s}")
 check(not broken, f"ссылки и картинки на {len(docs)} страницах" + ("" if not broken else ": " + "; ".join(broken[:8])))
 
+# 3б. посты ВКонтакте
+vk = json.loads((ROOT / "src" / "vk-posts.json").read_text(encoding="utf-8"))["posts"]
+shown = [p for p in vk if p.get("show")]
+blog = (ROOT / "docs" / "blog.html").read_text(encoding="utf-8")
+missing = [f"wall{p['owner']}_{p['id']}" for p in shown if f"vk_post_{p['owner']}_{p['id']}" not in blog]
+bad = [f"wall{p['owner']}_{p['id']}" for p in vk if not (p.get("title") and int(p["owner"]) and int(p["id"]))]
+dup = len({(p["owner"], p["id"]) for p in vk}) != len(vk)
+check(not missing and not bad and not dup, f"посты ВК: {len(shown)} на странице блога из {len(vk)} в списке" + (f"; нет на странице: {missing}" if missing else "") + (f"; без заголовка: {bad}" if bad else "") + ("; есть дубли" if dup else ""))
+
 todo = sum(p.read_text(encoding="utf-8").count("zm-todo") for p in docs.values())
 notes.append(f"INFO  мест с пометкой «заменить» (zm-todo): {todo}")
 

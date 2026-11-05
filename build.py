@@ -46,6 +46,29 @@ def base_for(mode):
     return render(css, mode)
 
 
+def vk_cards():
+    """Карточки постов ВКонтакте из src/vk-posts.json (только show=true)."""
+    from html import escape
+    data = json.loads((SRC / "vk-posts.json").read_text(encoding="utf-8"))
+    out = []
+    for p in data["posts"]:
+        if not p.get("show"):
+            continue
+        owner, pid = int(p["owner"]), int(p["id"])
+        url = f"https://vk.com/wall{owner}_{pid}"
+        out.append(
+            f'    <article class="zm-vk__item" data-owner="{owner}" data-post="{pid}" data-hash="{escape(p.get("hash", ""))}">\n'
+            f'      <div class="zm-vk__embed" id="vk_post_{owner}_{pid}"></div>\n'
+            f'      <div class="zm-vk__card">\n'
+            f'        <span class="zm-tag zm-vk__kind">{escape(p.get("kind", "Пост"))}</span>\n'
+            f'        <h3>{escape(p["title"])}</h3>\n'
+            f'        <p>{escape(p.get("text", ""))}</p>\n'
+            f'        <a class="zm-vk__link" href="{url}" target="_blank" rel="noopener">Смотреть фото во&nbsp;ВКонтакте</a>\n'
+            f'      </div>\n'
+            f'    </article>')
+    return "\n".join(out)
+
+
 def sections(page):
     for item in page["sections"]:
         if isinstance(item, list):
@@ -71,6 +94,11 @@ def build():
         report.append((f"{name}/00-base.html", len(tb.encode())))
         for i, (sec, params) in enumerate(sections(page), start=1):
             raw = (SRC / "sections" / f"{sec}.html").read_text(encoding="utf-8")
+            if "{{VKPOSTS}}" in raw:
+                cards = vk_cards()
+                if not cards:
+                    continue  # нечего показывать — секцию не выводим
+                raw = raw.replace("{{VKPOSTS}}", cards)
             parts_docs.append(render(raw, "docs", params))
             t = render(raw, "tilda", params)
             fn = f"{i:02d}-{sec}.html"

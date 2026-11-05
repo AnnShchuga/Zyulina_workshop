@@ -34,9 +34,10 @@
    8806 B  OK   blog/00-base.html
    3097 B  OK   blog/01-header.html
     737 B  OK   blog/02-pagehead.html
-   4837 B  OK   blog/03-blog-list.html
-   1687 B  OK   blog/04-cta.html
-   2881 B  OK   blog/05-footer.html
+  13077 B  OK   blog/03-blog-vk.html
+   4837 B  OK   blog/04-blog-list.html
+   1687 B  OK   blog/05-cta.html
+   2881 B  OK   blog/06-footer.html
    8806 B  OK   contacts/00-base.html
    3097 B  OK   contacts/01-header.html
     839 B  OK   contacts/02-pagehead.html

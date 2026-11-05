@@ -1,0 +1,48 @@
+<section class="zm zm-sec zm-vk" id="vk">
+<!-- Посты из ВКонтакте. Список — в src/vk-posts.json, разметку карточек подставляет build.py вместо {{VKPOSTS}}.
+     У поста с hash поверх карточки встаёт официальный виджет ВК «Запись на стене» (фото, лайки, комментарии).
+     Без hash или если скрипт ВК не загрузился — остаётся карточка со ссылкой на пост. -->
+<style>
+.zm-vk__head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:var(--zm-s5)}
+.zm-vk__head p{max-width:46ch;color:var(--zm-muted)}
+.zm-vk__grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:var(--zm-s3);align-items:start}
+.zm-vk__item{background:var(--zm-paper);border-radius:var(--zm-radius);overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.zm-vk__card{padding:var(--zm-s3);display:flex;flex-direction:column;gap:12px}
+.zm-vk__card h3{font:700 26px/1.05 var(--zm-font-display);text-transform:uppercase;color:var(--zm-ink)}
+.zm-vk__card p{font-size:15px;line-height:1.55}
+.zm-vk__kind{align-self:flex-start;background:#2E7F93}
+.zm-vk__link{display:inline-flex;align-items:center;gap:8px;font-weight:700;color:var(--zm-ink);text-decoration:none;margin-top:4px}
+.zm-vk__link:hover{color:var(--zm-red)}
+.zm-vk__link::before{content:'VK';display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--zm-ink);color:#fff;font:700 10px/1 var(--zm-font-text)}
+.zm-vk__embed:empty{display:none}
+.zm-vk__item.is-embedded .zm-vk__card{display:none}
+</style>
+<div class="zm-deco zm-star" style="right:6%;top:50px"></div>
+<div class="zm-wrap zm-z">
+  <div class="zm-vk__head">
+    <h2 class="zm-h2">Из&nbsp;моего<br><span class="zm-red">ВКонтакте</span></h2>
+    <p>Выставки кукол и&nbsp;вышивки, праздничный декор, всё, что вдохновляет на&nbsp;новые мастер-классы.</p>
+  </div>
+  <div class="zm-vk__grid">
+{{VKPOSTS}}
+  </div>
+</div>
+<script>
+(function(){
+  var s=document.currentScript.closest('section');
+  var items=[].slice.call(s.querySelectorAll('.zm-vk__item[data-hash]')).filter(function(i){return i.getAttribute('data-hash')});
+  if(!items.length)return;
+  function embed(){
+    items.forEach(function(i){
+      try{
+        VK.Widgets.Post(i.querySelector('.zm-vk__embed').id,+i.getAttribute('data-owner'),+i.getAttribute('data-post'),i.getAttribute('data-hash'),{width:'auto'});
+        i.classList.add('is-embedded');
+      }catch(e){}
+    });
+  }
+  if(window.VK&&VK.Widgets){embed();return;}
+  var js=document.createElement('script');js.src='https://vk.com/js/api/openapi.js?169';js.async=true;js.onload=embed;
+  document.head.appendChild(js);
+})();
+</script>
+</section>
