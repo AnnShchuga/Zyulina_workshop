@@ -48,7 +48,7 @@
 }
 .zm,.zm *{box-sizing:border-box}
 .zm img{max-width:100%;display:block}
-.zm a{color:inherit}
+.zm a:not(.zm-btn){color:inherit}
 .zm h1,.zm h2,.zm h3,.zm p{margin:0}
 .zm-page{background:var(--zm-bg) url('assets/decor/seigaiha-bg.svg') repeat;background-size:120px 60px}
 .zm-wrap{max-width:var(--zm-max);margin:0 auto;padding:0 var(--zm-s3);position:relative}
@@ -115,6 +115,17 @@
 }
 @media (prefers-reduced-motion:reduce){.zm *{transition:none!important;scroll-behavior:auto!important}}
 </style>
+<script>
+/* Адрес почты собирается только в браузере: в коде страницы его нет, ботам-сборщикам нечего взять.
+   Без JS ссылка ведёт на страницу контактов. */
+(function(){
+  function addr(a){var p=a.getAttribute('data-zm-mail').split('|');return 'mailto:'+p[0]+'@'+p[1];}
+  function fix(){[].forEach.call(document.querySelectorAll('[data-zm-mail]'),function(a){a.href=addr(a);});}
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-zm-mail]');if(a){a.href=addr(a);}},true);
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',fix);else fix();
+  window.addEventListener('load',fix);
+})();
+</script>
 
 <header class="zm zm-hd" id="top">
 <style>
@@ -184,8 +195,8 @@
 <section class="zm zm-sec zm-ct" style="padding-top:0">
 <style>
 .zm-ct__grid{display:grid;grid-template-columns:repeat(2,1fr);max-width:860px;gap:var(--zm-s3)}
-.zm-ct__card{background:var(--zm-paper);border-radius:var(--zm-radius);padding:var(--zm-s4);display:flex;flex-direction:column;gap:12px;text-decoration:none;color:var(--zm-text);border:2px solid transparent;transition:border-color .2s}
-.zm-ct__card:hover{border-color:var(--zm-ink)}
+.zm-ct__card{background:var(--zm-paper);border-radius:var(--zm-radius);padding:var(--zm-s4);display:flex;flex-direction:column;gap:12px;color:var(--zm-text)}
+.zm-ct__card .zm-btn{align-self:flex-start;margin-top:auto}
 .zm-ct__card b{font:700 30px/1 var(--zm-font-display);text-transform:uppercase;color:var(--zm-ink)}
 .zm-ct__card span{color:var(--zm-muted)}
 .zm-ct__form{margin-top:var(--zm-s5);border:2px dashed var(--zm-line);border-radius:var(--zm-radius);padding:var(--zm-s4);text-align:center;color:var(--zm-muted)}
@@ -194,8 +205,8 @@
 </style>
 <div class="zm-wrap zm-z">
   <div class="zm-ct__grid">
-    <a class="zm-ct__card" href="https://vk.com/id598297974"><b>ВКонтакте</b><span>Сообщения, новые работы и&nbsp;анонсы</span><span>vk.com/id598297974</span></a>
-    <a class="zm-ct__card" href="mailto:zyulil@mail.ru"><b>Почта</b><span>Для заказов и&nbsp;программ для организаций</span><span>zyulil@mail.ru</span></a>
+    <div class="zm-ct__card"><b>ВКонтакте</b><span>Сообщения, новые работы и&nbsp;анонсы</span><a class="zm-btn zm-btn--s" href="https://vk.com/id598297974">Написать во&nbsp;ВКонтакте</a></div>
+    <div class="zm-ct__card"><b>Почта</b><span>Для заказов и&nbsp;программ для организаций</span><a class="zm-btn zm-btn--s" href="contacts.html" data-zm-mail="zyulil|mail.ru">Написать письмо</a></div>
   </div>
   <p class="zm-ct__topic" hidden></p>
   <!-- В Тильде сюда ставится СТАНДАРТНЫЙ блок формы (BF-серия), а не код: так заявки приходят на почту/в Telegram и в «Заявки» Тильды. -->
@@ -272,9 +283,9 @@
       <h3>Контакты</h3>
       <div class="zm-ft__soc">
         <a href="https://vk.com/id598297974" aria-label="ВКонтакте">VK</a>
-        <a href="mailto:zyulil@mail.ru" aria-label="Электронная почта">@</a>
+        <a href="contacts.html" data-zm-mail="zyulil|mail.ru" aria-label="Написать письмо">@</a>
       </div>
-      <p style="margin-top:var(--zm-s3)"><a href="mailto:zyulil@mail.ru" style="color:var(--zm-ink)">zyulil@mail.ru</a></p>
+      <p style="margin-top:var(--zm-s3)"><a class="zm-btn zm-btn--s zm-btn--ghost" href="contacts.html" data-zm-mail="zyulil|mail.ru">Написать письмо</a></p>
     </div>
   </div>
   <div class="zm-ft__copy">

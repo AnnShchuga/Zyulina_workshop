@@ -48,7 +48,7 @@
 }
 .zm,.zm *{box-sizing:border-box}
 .zm img{max-width:100%;display:block}
-.zm a{color:inherit}
+.zm a:not(.zm-btn){color:inherit}
 .zm h1,.zm h2,.zm h3,.zm p{margin:0}
 .zm-page{background:var(--zm-bg) url('assets/decor/seigaiha-bg.svg') repeat;background-size:120px 60px}
 .zm-wrap{max-width:var(--zm-max);margin:0 auto;padding:0 var(--zm-s3);position:relative}
@@ -115,6 +115,17 @@
 }
 @media (prefers-reduced-motion:reduce){.zm *{transition:none!important;scroll-behavior:auto!important}}
 </style>
+<script>
+/* Адрес почты собирается только в браузере: в коде страницы его нет, ботам-сборщикам нечего взять.
+   Без JS ссылка ведёт на страницу контактов. */
+(function(){
+  function addr(a){var p=a.getAttribute('data-zm-mail').split('|');return 'mailto:'+p[0]+'@'+p[1];}
+  function fix(){[].forEach.call(document.querySelectorAll('[data-zm-mail]'),function(a){a.href=addr(a);});}
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-zm-mail]');if(a){a.href=addr(a);}},true);
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',fix);else fix();
+  window.addEventListener('load',fix);
+})();
+</script>
 
 <header class="zm zm-hd" id="top">
 <style>
@@ -229,9 +240,9 @@
       <h3>Контакты</h3>
       <div class="zm-ft__soc">
         <a href="https://vk.com/id598297974" aria-label="ВКонтакте">VK</a>
-        <a href="mailto:zyulil@mail.ru" aria-label="Электронная почта">@</a>
+        <a href="contacts.html" data-zm-mail="zyulil|mail.ru" aria-label="Написать письмо">@</a>
       </div>
-      <p style="margin-top:var(--zm-s3)"><a href="mailto:zyulil@mail.ru" style="color:var(--zm-ink)">zyulil@mail.ru</a></p>
+      <p style="margin-top:var(--zm-s3)"><a class="zm-btn zm-btn--s zm-btn--ghost" href="contacts.html" data-zm-mail="zyulil|mail.ru">Написать письмо</a></p>
     </div>
   </div>
   <div class="zm-ft__copy">

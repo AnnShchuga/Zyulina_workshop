@@ -1,4 +1,4 @@
-   8806 B  OK   index/00-base.html
+   9603 B  OK   index/00-base.html
    3151 B  OK   index/01-header.html
    2373 B  OK   index/02-hero.html
    5703 B  OK   index/03-formats.html
@@ -8,45 +8,45 @@
    2193 B  OK   index/07-about-short.html
    2357 B  OK   index/08-reviews.html
    5256 B  OK   index/09-blog-rail.html
-   1687 B  OK   index/10-cta.html
-   2929 B  OK   index/11-footer.html
-   8806 B  OK   workshops/00-base.html
+   1705 B  OK   index/10-cta.html
+   2987 B  OK   index/11-footer.html
+   9603 B  OK   workshops/00-base.html
    3151 B  OK   workshops/01-header.html
     871 B  OK   workshops/02-pagehead.html
    9139 B  OK   workshops/03-catalog.html
    2167 B  OK   workshops/04-faq.html
-   1687 B  OK   workshops/05-cta.html
-   2929 B  OK   workshops/06-footer.html
-   8806 B  OK   works/00-base.html
+   1705 B  OK   workshops/05-cta.html
+   2987 B  OK   workshops/06-footer.html
+   9603 B  OK   works/00-base.html
    3151 B  OK   works/01-header.html
     807 B  OK   works/02-pagehead.html
    7398 B  OK   works/03-works-grid.html
    1753 B  OK   works/04-order-steps.html
-   1687 B  OK   works/05-cta.html
-   2929 B  OK   works/06-footer.html
-   8806 B  OK   about/00-base.html
+   1705 B  OK   works/05-cta.html
+   2987 B  OK   works/06-footer.html
+   9603 B  OK   about/00-base.html
    3151 B  OK   about/01-header.html
     736 B  OK   about/02-pagehead.html
    3147 B  OK   about/03-about-full.html
    2357 B  OK   about/04-reviews.html
-   1687 B  OK   about/05-cta.html
-   2929 B  OK   about/06-footer.html
-   8806 B  OK   blog/00-base.html
+   1705 B  OK   about/05-cta.html
+   2987 B  OK   about/06-footer.html
+   9603 B  OK   blog/00-base.html
    3151 B  OK   blog/01-header.html
     737 B  OK   blog/02-pagehead.html
   19927 B  OK   blog/03-blog-vk.html
   13232 B  OK   blog/04-blog-vk.html
    4837 B  OK   blog/05-blog-list.html
-   1687 B  OK   blog/06-cta.html
-   2929 B  OK   blog/07-footer.html
-   8806 B  OK   contacts/00-base.html
+   1705 B  OK   blog/06-cta.html
+   2987 B  OK   blog/07-footer.html
+   9603 B  OK   contacts/00-base.html
    3151 B  OK   contacts/01-header.html
     839 B  OK   contacts/02-pagehead.html
-   2788 B  OK   contacts/03-contacts.html
+   2829 B  OK   contacts/03-contacts.html
    2167 B  OK   contacts/04-faq.html
-   2929 B  OK   contacts/05-footer.html
-   8806 B  OK   privacy/00-base.html
+   2987 B  OK   contacts/05-footer.html
+   9603 B  OK   privacy/00-base.html
    3151 B  OK   privacy/01-header.html
     671 B  OK   privacy/02-pagehead.html
     713 B  OK   privacy/03-privacy.html
-   2929 B  OK   privacy/04-footer.html
+   2987 B  OK   privacy/04-footer.html

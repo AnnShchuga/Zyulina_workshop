@@ -112,6 +112,12 @@ with sync_playwright() as pw:
             check(vis == 2, f"каталог: фильтр по якорю #pdf показывает {vis} карточки (ожидаем 2)")
             pg.goto((ROOT / "docs" / "contacts.html").as_uri() + "?mk=origami")
             check("Оригами" in pg.inner_text(".zm-ct__topic"), "контакты: подставляется выбранный мастер-класс")
+            hrefs = pg.eval_on_selector_all("[data-zm-mail]", "els => els.map(e => e.href)")
+            visible = "@mail.ru" in pg.inner_text("body")
+            in_code = any("zyulil@" in f.read_text(encoding="utf-8") for f in (ROOT / "docs").glob("*.html")) or \
+                      any("zyulil@" in f.read_text(encoding="utf-8") for f in (ROOT / "tilda").rglob("*.html"))
+            check(hrefs and all(h == "mailto:zyulil@mail.ru" for h in hrefs) and not visible and not in_code,
+                  f"почта: {len(hrefs)} кнопки ведут в почтовый ящик, адреса нет ни в тексте страницы, ни в коде")
         ctx.close()
     br.close()
 
