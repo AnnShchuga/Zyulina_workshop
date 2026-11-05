@@ -2,9 +2,9 @@
    3151 B  OK   index/01-header.html
    2373 B  OK   index/02-hero.html
    5703 B  OK   index/03-formats.html
-   5639 B  OK   index/04-workshops-rail.html
+   5642 B  OK   index/04-workshops-rail.html
    2557 B  OK   index/05-audience.html
-   3846 B  OK   index/06-gallery.html
+   3771 B  OK   index/06-gallery.html
    2193 B  OK   index/07-about-short.html
    2357 B  OK   index/08-reviews.html
    5256 B  OK   index/09-blog-rail.html
@@ -13,14 +13,14 @@
    8806 B  OK   workshops/00-base.html
    3151 B  OK   workshops/01-header.html
     871 B  OK   workshops/02-pagehead.html
-   9136 B  OK   workshops/03-catalog.html
+   9139 B  OK   workshops/03-catalog.html
    2167 B  OK   workshops/04-faq.html
    1687 B  OK   workshops/05-cta.html
    2929 B  OK   workshops/06-footer.html
    8806 B  OK   works/00-base.html
    3151 B  OK   works/01-header.html
     807 B  OK   works/02-pagehead.html
-   7234 B  OK   works/03-works-grid.html
+   7398 B  OK   works/03-works-grid.html
    1753 B  OK   works/04-order-steps.html
    1687 B  OK   works/05-cta.html
    2929 B  OK   works/06-footer.html
