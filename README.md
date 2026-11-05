@@ -124,4 +124,4 @@ python3 verify.py --shots      # проверки + скриншоты в shots/
 `python3 tools/add_vk_post.py "https://vk.com/wall598297974_123" --title "Заголовок" --text "Текст" --kind "Мастер-класс"`.
 
 После любой правки: `python3 build.py && python3 verify.py`, затем в Тильде заменить содержимое
-блока `blog/02-blog-vk.html`. Скрыть пост, не удаляя: в `vk-posts.json` поставить `"show": false`.
+блока `blog/03-blog-vk.html`. Скрыть пост, не удаляя: в `vk-posts.json` поставить `"show": false`.
